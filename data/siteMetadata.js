@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Karan Pratap Singh',
-  author: 'Karan Pratap Singh',
-  headerTitle: 'Karan Pratap Singh',
+  title: 'Christopher Morales',
+  author: 'Christopher Morales',
+  headerTitle: 'Christopher Morales',
   description:
     'A software engineer who aims to evolve, innovate, and inspire through technology.',
   language: 'en-us',
