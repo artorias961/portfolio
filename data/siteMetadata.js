@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/demxntia.jpg',
   email: 'contact@karanpratapsingh.com',
   github: 'https://github.com/artorias961',
-  twitter: 'https://twitter.com/karan_6864',
+  twitter: 'https://twitter.com/',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
