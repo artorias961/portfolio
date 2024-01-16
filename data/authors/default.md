@@ -1,12 +1,12 @@
 ---
 name: Christopher Morales
 shortname: Arty-Chan
-avatar: /static/avatar.jpg
+avatar: /static/demxntia.jpg
 occupation: Electrical Engineer
 company: Graduate Student
 resume: /static/Christopher_Morales_Electrical_Engineer_V7_2.pdf
 email: contact@karanpratapsingh.com
-twitter: https://twitter.com/karan_6864
+twitter: https://twitter.com/
 linkedin: https://www.linkedin.com/in/artorias961
 github: https://github.com/artorias961
 ---
