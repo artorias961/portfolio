@@ -62,83 +62,83 @@ type StackInfoMap = {
 
 export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.typescript]: {
-    value: 'TypeScript',
+    value: 'C',
     color: Colors.typescript,
   },
   [Stack.javascript]: {
-    value: 'JavaScript',
+    value: 'C++',
     color: Colors.javascript,
   },
   [Stack.go]: {
-    value: 'Go',
+    value: 'Python',
     color: Colors.go,
   },
   [Stack.react]: {
-    value: 'React',
+    value: 'HTML',
     color: Colors.react,
   },
   [Stack.reactnative]: {
-    value: 'React Native',
+    value: 'CSS',
     color: Colors.reactnative,
   },
   [Stack.graphql]: {
-    value: 'GraphQL',
+    value: 'Raspberry Pi',
     color: Colors.graphql,
   },
   [Stack.aws]: {
-    value: 'AWS',
+    value: 'Linux',
     color: Colors.aws,
   },
   [Stack.gcp]: {
-    value: 'Google Cloud',
+    value: 'Docker',
     color: Colors.gcp,
   },
   [Stack.python]: {
-    value: 'Python',
+    value: 'Git',
     color: Colors.python,
   },
   [Stack.node]: {
-    value: 'Node',
+    value: 'Bash',
     color: Colors.node,
   },
   [Stack.django]: {
-    value: 'Django',
+    value: 'Arduino',
     color: Colors.django,
   },
   [Stack.nats]: {
-    value: 'NATS',
+    value: 'Matlab',
     color: Colors.nats,
   },
   [Stack.kafka]: {
-    value: 'Kafka',
+    value: 'Django',
     color: Colors.kafka,
   },
   [Stack.arangodb]: {
-    value: 'ArangoDB',
+    value: 'Redis',
     color: Colors.arangodb,
   },
   [Stack.postgres]: {
-    value: 'Postgres',
+    value: 'ZephyrRTOS',
     color: Colors.postgres,
   },
   [Stack.redis]: {
-    value: 'Redis',
+    value: 'VIM',
     color: Colors.redis,
   },
   [Stack.mongo]: {
-    value: 'MongoDB',
+    value: 'PyTorch',
     color: Colors.mongo,
   },
   [Stack.docker]: {
-    value: 'Docker',
+    value: 'JavaScript',
     color: Colors.docker,
   },
   [Stack.kubernetes]: {
-    value: 'Kubernetes',
+    value: 'Codered CMS',
     color: Colors.kubernetes,
   },
   [Stack.terraform]: {
-    value: 'Terraform',
+    value: 'Google Cloud',
     color: Colors.terraform,
   },
 };
