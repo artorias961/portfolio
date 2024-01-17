@@ -17,7 +17,7 @@ export interface Contact {
 
 export const contact: Contact = {
   twitter: '@artorias9611',
-  site: 'karanpratapsingh.com',
+  site: 'christopher-morales.vercel.app',
   calendly: 'https://calendly.com/artorias961',
   links: {
     github: 'https://github.com/artorias961',
@@ -25,7 +25,7 @@ export const contact: Contact = {
     googlescholar:
       'https://scholar.google.com/',
     twitter: 'https://twitter.com/',
-    youtube: 'https://www.youtube.com/c/artorias961',
+    youtube: 'https://www.youtube.com/channel/UCQMCcW51kCojQtxdr8c4-pw',
     email: 'mailto:contact@artorias962.com',
     buymeacoffee: 'https://www.buymeacoffee.com/',
   },
