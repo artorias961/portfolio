@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpg',
   socialBanner: '/static/demxntia.jpg',
-  email: 'contact@karanpratapsingh.com',
+  email: 'contact@artorias962.com',
   github: 'https://github.com/artorias961',
   twitter: 'https://twitter.com/',
   facebook: 'https://facebook.com',
