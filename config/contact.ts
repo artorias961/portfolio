@@ -16,17 +16,17 @@ export interface Contact {
 }
 
 export const contact: Contact = {
-  twitter: '@karan_6864',
+  twitter: '@artorias9611',
   site: 'karanpratapsingh.com',
-  calendly: 'https://calendly.com/karanpratapsingh',
+  calendly: 'https://calendly.com/artorias961',
   links: {
-    github: 'https://github.com/karanpratapsingh',
-    linkedin: 'https://linkedin.com/in/karan99',
+    github: 'https://github.com/artorias961',
+    linkedin: 'https://linkedin.com/in/artorias961',
     googlescholar:
-      'https://scholar.google.com/citations?user=8wIfeAsAAAAJ&hl=en',
-    twitter: 'https://twitter.com/karan_6864',
-    youtube: 'https://www.youtube.com/c/KaranPratapSingh',
-    email: 'mailto:contact@karanpratapsingh.com',
-    buymeacoffee: 'https://www.buymeacoffee.com/karanps',
+      'https://scholar.google.com/',
+    twitter: 'https://twitter.com/',
+    youtube: 'https://www.youtube.com/c/artorias961',
+    email: 'mailto:contact@artorias962.com',
+    buymeacoffee: 'https://www.buymeacoffee.com/',
   },
 };
