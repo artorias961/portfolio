@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Christopher Morales',
   headerTitle: 'Christopher Morales',
   description:
-    'A eletrical engineer who aims to evolve, innovate, and inspire through technology.',
+    'A electrical engineer who aims to evolve, innovate, and inspire through technology.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://christopher-morales.vercel.app',
