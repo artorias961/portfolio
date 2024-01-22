@@ -1,6 +1,6 @@
 ---
 name: Christopher Morales
-shortname: Arty-Chan
+shortname: Christopher Morales
 avatar: /static/demxntia.jpg
 occupation: Electrical Engineer
 company: Graduate Student
