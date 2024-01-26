@@ -1,24 +1,214 @@
 ---
-title: 'Advanced Monitoring with NATS surveyor'
-date: '2022-04-15'
-tags: ['nats', 'distributedsystems', 'monitoring']
+title: 'Minecraft server using Docker and Pteradactyl'
+date: '2024-01-23'
+tags: ['Docker', 'Pteradactyl']
 draft: false
-summary: 'Learn how to monitor your NATS clusters with NATS surveyor'
+summary: 'Learn how to create a Minecraft Server using Docker and Pteradactyl'
 images: ['/static/blogs/advanced-monitoring-with-nats-surveyor.png']
 authors: ['default']
 ---
 
-In this article, we'll set up [nats-surveyor](https://github.com/nats-io/nats-surveyor) for advanced monitoring of our [NATS servers](https://github.com/nats-io/nats-server) through [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
+In this article, we explore the efficiency of utilizing a Docker Pterodactyl container for hosting Minecraft servers. By leveraging this containerization approach, the process of deployment and management is streamlined, offering a portable and user-friendly solution for running Minecraft servers.
 
-### What is NATS Surveyor?
 
-![setup](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zd2x79at8dmnnjkcox4g.png)
+## What is Docker?
 
-NATS surveyor polls the NATS server for [Statz](https://docs.nats.io/running-a-nats-service/nats_admin/monitoring#monitoring-endpoints) messages to generate data for Prometheus. This allows a single exporter to connect to any NATS server and get an entire picture of a NATS deployment without requiring extra monitoring components or sidecars.
+[Docker](https://www.docker.com) is a platform that uses containerization to automate the deployment of applications. Containers are isolated environments that package applications and their dependencies for consistent and portable execution across different systems. Docker provides benefits such as portability, resource efficiency, isolation, version control, and tools for orchestration. It simplifies development, testing, and deployment processes, ensuring applications run consistently across various environments.
 
-It's really powerful as we can now just connect the data generated for [Prometheus](https://prometheus.io/) and setup dashboards on observability platforms like [Grafana](https://grafana.com/).
 
-### Setup
+## What is Pteradactyl?
+
+[Pterodactyl](https://pterodactyl.io/project/introduction.html) is the open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to administrators and users. What more are you waiting for? Make game servers a first-class citizen on your platform today.
+
+
+
+## Base information of Pteradactyl Panel
+
+Pterodactyl Server Panel is a user-friendly web interface for efficiently managing game servers, offering features like server creation, resource monitoring, and file management. Users can control multiple game servers through this centralized panel.
+
+In Pterodactyl, a "server" represents an individual game server instance with dedicated resources and configurations, manageable through the Server Panel. Nests categorize server types, streamlining the creation process. Each server type within a nest is configured using an "egg," a setup file defining installation, startup parameters, and specific settings.
+
+The "yolk" encompasses core configuration settings applicable globally to all servers, covering system paths, network configurations, and other parameters. Meanwhile, "Wings" are daemon components managing game server instances on hosting machines. They interact with Docker, create server containers, and communicate with the Server Panel for instructions and updates. 
+
+### Create Panel
+
+Begin by establishing a Pterodactyl Server Panel, a user-friendly web interface facilitating efficient game server management. This involves setting up a centralized dashboard for tasks such as creating servers, monitoring resources, and managing files.
+
+
+### Confirgure Server
+
+Once the Panel is in place, proceed to create and configure a server within Pterodactyl. Define its specific resources, configurations, and settings through the Panel's intuitive interface. For Minecraft game hosting, ensure appropriate specifications are chosen.
+
+### Deploy Minecraft Game
+With the server configured, deploy a Minecraft game instance by selecting the appropriate egg—an installation and configuration file. Customize the server behavior based on Minecraft-specific requirements, such as startup parameters and game settings.
+
+
+
+
+## Setup
+
+### Folder Structure
+First create a base directory named "pterodactyl" with a subfolder named "panel".
+
+
+### Docker Compose Configuration
+Inside the "panel" folder, create a **docker-compose.yml** file with the following content:
+
+```yml
+version: '3.8'
+x-common:
+  database:
+    &db-environment
+    # Do not remove the "&db-password" from the end of the line below, it is important
+    # for Panel functionality.
+    MYSQL_PASSWORD: &db-password "CHANGE_ME"
+    MYSQL_ROOT_PASSWORD: "CHANGE_ME_TOO"
+  panel:
+    &panel-environment
+    # This URL should be the URL that your reverse proxy routes to the panel server
+    APP_URL: "https://pterodactyl.example.com"
+    # A list of valid timezones can be found here: http://php.net/manual/en/timezones.php
+    APP_TIMEZONE: "UTC"
+    APP_SERVICE_AUTHOR: "noreply@example.com"
+    TRUSTED_PROXIES: "*" # Set this to your proxy IP ("*" trust all proxy)
+    # Uncomment the line below and set to a non-empty value if you want to use Let's Encrypt
+    # to generate an SSL certificate for the Panel.
+    # LE_EMAIL: ""
+  mail:
+    &mail-environment
+    MAIL_FROM: "noreply@example.com"
+    MAIL_DRIVER: "smtp"
+    MAIL_HOST: "mail"
+    MAIL_PORT: "1025"
+    MAIL_USERNAME: ""
+    MAIL_PASSWORD: ""
+    MAIL_ENCRYPTION: "true"
+
+#
+# ------------------------------------------------------------------------------------------
+# DANGER ZONE BELOW
+#
+# The remainder of this file likely does not need to be changed. Please only make modifications
+# below if you understand what you are doing.
+#
+services:
+  database:
+    image: mariadb:10.5
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - "/srv/pterodactyl/database:/var/lib/mysql"
+    environment:
+      <<: *db-environment
+      MYSQL_DATABASE: "panel"
+      MYSQL_USER: "pterodactyl"
+  cache:
+    image: redis:alpine
+    restart: always
+  panel:
+    image: ghcr.io/pterodactyl/panel:latest
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - database
+      - cache
+    volumes:
+      - "/srv/pterodactyl/var/:/app/var/"
+      - "/srv/pterodactyl/nginx/:/etc/nginx/http.d/"
+      - "/srv/pterodactyl/certs/:/etc/letsencrypt/"
+      - "/srv/pterodactyl/logs/:/app/storage/logs"
+    environment:
+      <<: [*panel-environment, *mail-environment]
+      DB_PASSWORD: *db-password
+      APP_ENV: "production"
+      APP_ENVIRONMENT_ONLY: "false"
+      CACHE_DRIVER: "redis"
+      SESSION_DRIVER: "redis"
+      QUEUE_DRIVER: "redis"
+      REDIS_HOST: "cache"
+      DB_HOST: "database"
+      DB_PORT: "3306"
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+```
+*NOTE: The purpose of the docker-compose.yml file is to define and configure Docker services, such as MySQL, Redis, and the Pterodactyl panel, for seamless deployment and management within a Docker containerized environment.*
+
+
+### Configuration Details 
+
+Ensure to replace the placeholder "CHANGE_ME" in MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD with strong and secure passwords. Customize values for APP_URL, APP_TIMEZONE, APP_SERVICE_AUTHOR, and other parameters to align with your specific requirements. Additionally, configure mail-related settings according to your email server's specifications.
+
+*NOTE: If you do not make any changes then it is fine for now!*
+
+
+
+### Run Docker Compose
+
+Execute the following command line on the terminal:
+```bash
+docker-compose up -d
+```
+*NOTE: After executing the command "docker-compose up -d," the Pterodactyl containers will be initiated, and the services defined in the docker-compose.yml file, including MySQL, Redis, and the Pterodactyl panel, will be started in detached mode, allowing the setup to run in the background.*
+
+
+
+### Create a user
+
+To create a user, use the following command:
+```bash
+docker-compose run --rm panel php artisan p:user:make
+```
+This command is executed within the Docker environment and utilizes the Pterodactyl panel's artisan command-line tool to generate a new user.
+
+
+### Logging in to your panel
+
+To log in to your panel, access it by navigating to localhost on your computer's web browser. This typically involves entering [localhost](http://localhost/) or [127.0.0.1](http://127.0.0.1/) in the address bar, allowing you to access and log in to the Pterodactyl panel locally.
+
+*NOTE: Localhost is a generic hostname that refers to the current device used to access it, commonly used to access services running on the same machine, such as web servers or databases. If a device is not on the same network, it cannot access or see the content hosted on localhost, as localhost is specific to the local machine.*
+
+
+### Creating a Node in the Server Panel
+
+To create a node in the Pterodactyl Server Panel, follow these steps:
+
+- Log In:
+   - Ensure you are logged into the Pterodactyl Server Panel
+
+- Navigate to Settings:
+   - Go to the *Settings* section within the Panel
+
+- Go to Locations:
+   - Under *Settings,* access the *Locations* tab. Here, you'll find an option to *Create a New Location*
+
+- Create a New Location:
+   - Fill in the required information, specifically providing a name or short code to help group servers together. For this example, set the location name as **home** and press the *Create* button
+
+- Create a Node:
+   - Having created a location, proceed to create a node. Set the NAME and FQDN (Fully Qualified Domain Name) to your domain name
+
+- SSL Connection Settings:
+   - For the *Communicate Over SSL* setting, choose both **Use SSL Connection** and **Behind Proxy** to ensure secure communication over SSL, especially if the Panel is behind a proxy
+
+- Configuration for Node:
+   - Set the "Memory" and "Total Disk Space" based on your requirements; for example, set Memory to 8GB and Disk Space to 50GB, adjusting as needed for specific mods or games.
+
+
+
+
+
+
+
+
+
+
+
+
 
 Let's setup our local super cluster and start our surveyor service.
 
