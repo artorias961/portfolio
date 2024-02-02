@@ -1,0 +1,102 @@
+---
+title: 'Getting Started with Git'
+date: '2024-02-30'
+tags: ['Git']
+draft: false
+summary: 'A Step-by-Step Guide to Creating and Connecting to a Repository'
+images: ['/static/blogs/amazing-placeholder-blurhash.jpeg']
+authors: ['default']
+---
+
+## Short Summary
+
+This article provides a comprehensive, step-by-step guide on initializing a Git repository, configuring essential settings, and connecting to a remote repository on GitHub. Whether you're a beginner or looking for a quick reference, this guide will walk you through the process with clear instructions and explanations.
+
+
+## Process
+
+### Creating/initializing Git Repository
+This command initializes a new Git repository in the current directory:
+```Git
+git init
+```
+
+### Configure Push Defaults
+Set the default behavior for 'git push' to be more straightforward:
+```Git
+git config --global push.default simple
+```
+
+### Adding Files to Staging Area
+Add all files to the staging area. The asterisk (*) represents all files:
+```Git
+git add *
+```
+
+### Include .gitignore in Staging
+Ensure that your .gitignore file is included in the staging area to specify files and directories to ignore during version control:
+```Git
+git add .gitignore
+```
+
+### Check Staging Status
+
+View the status of your changes in the staging area:
+```Git
+git status
+```
+
+### Configure User Information
+Set your email and username to associate your commits with your GitHub account:
+```Git
+git config --global user.email "youremail@umich.edu"
+git config --global user.name "Your X. Name"
+```
+
+### Configure Credential Helper (Optional)
+Optional but convenient steps to cache your credentials for a specified period:
+```Git
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=604800'
+```
+
+
+### Commit Changes
+
+Commit the changes with a descriptive message:
+```Git
+git commit -m "first commit"
+```
+
+### Add a Remote Repository
+Link your local repository to a remote repository on GitHub:
+
+```Git
+git remote add origin URL_LINK
+```
+
+### Rename the Default Branch (Optional)
+
+Optionally, rename the default branch from "master" to "main":
+```Git
+git branch -m master main
+```
+
+### Push Changes to GitHub
+
+Push your committed changes to the remote repository on GitHub:
+```Git
+git push -u origin main
+```
+
+
+### Enter GitHub Credentials (if asked)
+Enter your GitHub username and password when prompted
+
+
+## Conclusion
+
+Congratulations! You've successfully created a Git repository, configured essential settings, and connected it to a remote repository on GitHub. This step-by-step guide is designed to help you get started with version control, making it easier to collaborate and manage your projects efficiently. Feel free to explore more advanced Git features as you continue your journey into the world of version control.
+
+
+
