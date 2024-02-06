@@ -33,8 +33,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'HyperTrade',
-    slug: 'hypertrade',
+    title: '3D Geometry Reconstruction of Medical Images',
+    slug: '3DGeometryReconstructionOfMedicalImages',
     banner: '/static/projects/hypertrade/banner.png',
     website: 'https://github.com/karanpratapsingh/HyperTrade',
     description:
