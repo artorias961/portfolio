@@ -2,8 +2,8 @@ import { Colors } from './colors';
 
 export enum Stack {
   // Languages
-  go,
-  typescript,
+  c,
+  cplusplus,
   javascript,
   python,
 
@@ -37,8 +37,8 @@ export enum Stack {
 }
 
 export const WorkStack = [
-  Stack.go,
-  Stack.typescript,
+  Stack.c,
+  Stack.cplusplus,
   Stack.python,
   Stack.react,
   Stack.aws,
@@ -61,15 +61,15 @@ type StackInfoMap = {
 };
 
 export const StackInfo: Record<Stack, StackInfoMap> = {
-  [Stack.typescript]: {
+  [Stack.c]: {
     value: 'C',
     color: Colors.typescript,
   },
-  [Stack.javascript]: {
+  [Stack.cplusplus]: {
     value: 'C++',
     color: Colors.javascript,
   },
-  [Stack.go]: {
+  [Stack.python]: {
     value: 'Python',
     color: Colors.go,
   },
@@ -93,7 +93,7 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Docker',
     color: Colors.gcp,
   },
-  [Stack.python]: {
+  [Stack.javascript]: {
     value: 'Git',
     color: Colors.python,
   },
