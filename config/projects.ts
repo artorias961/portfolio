@@ -44,8 +44,8 @@ export const projects: Project[] = [
     repository: 'https://github.com/karanpratapsingh/HyperTrade',
     stack: [
       Stack.nats,
-      Stack.go,
-      Stack.typescript,
+      Stack.cplusplus,
+      Stack.c,
       Stack.react,
       Stack.python,
       Stack.kubernetes,
@@ -98,7 +98,7 @@ export const projects: Project[] = [
       'An open source social media app that does not use your data against you.',
     repository: 'https://github.com/karanpratapsingh/Proximity',
     stack: [
-      Stack.typescript,
+      Stack.cplusplus,
       Stack.reactnative,
       Stack.node,
       Stack.graphql,
