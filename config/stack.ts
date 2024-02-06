@@ -4,54 +4,80 @@ export enum Stack {
   // Languages
   c,
   cplusplus,
-  javascript,
   python,
+  javascript,
 
   // Frontend
-  react,
-  reactnative,
+  HTML,
+  CSS,
+  // react,
+  // reactnative,
 
   // Backend
-  graphql,
-  node,
+  // graphql,
+  // node,
   django,
 
   // Cloud
-  aws,
-  gcp,
+  inteldevcloud,
+  googlecolab,
+  // aws,
+  // gcp,
 
   // Messaging
-  nats,
-  kafka,
+  // nats,
+  // kafka,
 
   // Databases
-  arangodb,
+  // arangodb,
   redis,
-  postgres,
-  mongo,
+  CoderedCMS,
+  // postgres,
+  // mongo,
 
   // Tools
+  // docker,
+  // kubernetes,
+  // terraform,
+
+  // Dev Ops
+  git,
   docker,
-  kubernetes,
-  terraform,
+  Bash,
+  Linux,
+
+  // Other programs/software
+  arduino,
+  matlab,
+  raspberrypi,
+  ZephyrRTOS,
+  VIM,
+  computervision,
+  jupyternotebook,
+  MachineLearning,
+
+
 }
 
 export const WorkStack = [
   Stack.c,
   Stack.cplusplus,
   Stack.python,
-  Stack.react,
-  Stack.aws,
-  Stack.gcp,
-  Stack.kubernetes,
-  Stack.docker,
-  Stack.terraform,
-  Stack.nats,
-  Stack.kafka,
-  Stack.graphql,
-  Stack.postgres,
+  Stack.javascript,
+  Stack.django,
+  Stack.HTML,
+  Stack.CSS,
+  Stack.django,
+  Stack.inteldevcloud,
+  Stack.googlecolab,
   Stack.redis,
-  Stack.arangodb,
+  Stack.CoderedCMS,
+  Stack.git,
+  Stack.docker,
+  Stack.redis,
+  Stack.git,
+  Stack.jupyternotebook,
+  Stack.MachineLearning,
   // Stack.reactnative,
 ];
 
@@ -63,82 +89,94 @@ type StackInfoMap = {
 export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.c]: {
     value: 'C',
-    color: Colors.typescript,
+    color: Colors.c,
   },
   [Stack.cplusplus]: {
     value: 'C++',
-    color: Colors.javascript,
+    color: Colors.cplusplus,
   },
   [Stack.python]: {
     value: 'Python',
-    color: Colors.go,
-  },
-  [Stack.react]: {
-    value: 'HTML',
-    color: Colors.react,
-  },
-  [Stack.reactnative]: {
-    value: 'CSS',
-    color: Colors.reactnative,
-  },
-  [Stack.graphql]: {
-    value: 'Raspberry Pi',
-    color: Colors.graphql,
-  },
-  [Stack.aws]: {
-    value: 'Linux',
-    color: Colors.aws,
-  },
-  [Stack.gcp]: {
-    value: 'Docker',
-    color: Colors.gcp,
-  },
-  [Stack.javascript]: {
-    value: 'Git',
     color: Colors.python,
   },
-  [Stack.node]: {
-    value: 'Bash',
-    color: Colors.node,
+  [Stack.javascript]: {
+    value: 'Javascript',
+    color: Colors.javascript,
+  },
+  [Stack.HTML]: {
+    value: 'HTML',
+    color: Colors.HTML,
+  },
+  [Stack.CSS]: {
+    value: 'CSS',
+    color: Colors.CSS,
   },
   [Stack.django]: {
-    value: 'Arduino',
+    value: 'Django',
     color: Colors.django,
   },
-  [Stack.nats]: {
-    value: 'Matlab',
-    color: Colors.nats,
+  [Stack.inteldevcloud]: {
+    value: 'Intel Dev Cloud',
+    color: Colors.inteldevcloud,
   },
-  [Stack.kafka]: {
-    value: 'Django',
-    color: Colors.kafka,
-  },
-  [Stack.arangodb]: {
-    value: 'Redis',
-    color: Colors.arangodb,
-  },
-  [Stack.postgres]: {
-    value: 'ZephyrRTOS',
-    color: Colors.postgres,
+  [Stack.googlecolab]: {
+    value: 'Google Colab',
+    color: Colors.googlecolab,
   },
   [Stack.redis]: {
-    value: 'VIM',
+    value: 'Redis',
     color: Colors.redis,
   },
-  [Stack.mongo]: {
-    value: 'PyTorch',
-    color: Colors.mongo,
+  [Stack.CoderedCMS]: {
+    value: 'Codered CMS',
+    color: Colors.CoderedCMS,
+  },
+  [Stack.git]: {
+    value: 'Git',
+    color: Colors.git,
   },
   [Stack.docker]: {
-    value: 'JavaScript',
+    value: 'Docker',
     color: Colors.docker,
   },
-  [Stack.kubernetes]: {
-    value: 'Codered CMS',
-    color: Colors.kubernetes,
+  [Stack.Bash]: {
+    value: 'Bash',
+    color: Colors.Bash,
   },
-  [Stack.terraform]: {
-    value: 'Google Cloud',
-    color: Colors.terraform,
+  [Stack.Linux]: {
+    value: 'Linux',
+    color: Colors.Linux,
+  },
+  [Stack.arduino]: {
+    value: 'Arduino',
+    color: Colors.arduino,
+  },
+  [Stack.matlab]: {
+    value: 'Matlab',
+    color: Colors.matlab,
+  },
+  [Stack.raspberrypi]: {
+    value: 'Raspberry Pi',
+    color: Colors.raspberrypi,
+  },
+  [Stack.ZephyrRTOS]: {
+    value: 'ZephyrRTOS',
+    color: Colors.ZephyrRTOS,
+  },
+  [Stack.VIM]: {
+    value: 'VIM',
+    color: Colors.VIM,
+  },
+  [Stack.computervision]: {
+    value: 'Computer Vision',
+    color: Colors.computervision,
+  },
+  [Stack.jupyternotebook]: {
+    value: 'Jupyter Notebook',
+    color: Colors.jupyternotebook,
+  },
+  [Stack.MachineLearning]: {
+    value: 'Machine Learning',
+    color: Colors.MachineLearning,
   },
 };

@@ -43,13 +43,13 @@ export const projects: Project[] = [
       'Ready to deploy, distributed cryptocurrency trading bot.',
     repository: 'https://github.com/karanpratapsingh/HyperTrade',
     stack: [
-      Stack.nats,
+      Stack.computervision,
       Stack.cplusplus,
       Stack.c,
-      Stack.react,
+      Stack.CSS,
       Stack.python,
-      Stack.kubernetes,
-      Stack.docker,
+      Stack.VIM,
+      Stack.CoderedCMS,
     ],
     dimensions: [360, 640],
     screenshots: [
@@ -77,11 +77,11 @@ export const projects: Project[] = [
     repository: null,
     stack: [
       Stack.javascript,
-      Stack.react,
-      Stack.node,
-      Stack.graphql,
-      Stack.aws,
-      Stack.arangodb,
+      Stack.c,
+      Stack.cplusplus,
+      Stack.computervision,
+      Stack.CSS,
+      Stack.CoderedCMS,
     ],
     screenshots: [],
     deployment: {
@@ -99,10 +99,10 @@ export const projects: Project[] = [
     repository: 'https://github.com/karanpratapsingh/Proximity',
     stack: [
       Stack.cplusplus,
-      Stack.reactnative,
-      Stack.node,
-      Stack.graphql,
-      Stack.postgres,
+      Stack.c,
+      Stack.computervision,
+      Stack.CoderedCMS,
+      Stack.python,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=a9b5a094-8a16-4c84-af16-65bf2378d7d9',
@@ -131,10 +131,10 @@ export const projects: Project[] = [
     repository: null,
     stack: [
       Stack.javascript,
-      Stack.react,
-      Stack.reactnative,
-      Stack.graphql,
-      Stack.gcp,
+      Stack.c,
+      Stack.computervision,
+      Stack.cplusplus,
+      Stack.CSS,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=b9b044ce-a3af-402f-a1db-1ae61621bb18',
@@ -162,10 +162,10 @@ export const projects: Project[] = [
       'Mobile ordering solution with robot delivery. Stewards also provides variety of tools like staff application to manage orders, self checkout solution and admin dashboard.',
     stack: [
       Stack.javascript,
-      Stack.react,
-      Stack.reactnative,
-      Stack.graphql,
-      Stack.gcp,
+      Stack.c,
+      Stack.cplusplus,
+      Stack.python,
+      Stack.git,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fstewards%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=ba9d7163-8df6-43ae-b804-01cd221cc593',
@@ -220,7 +220,7 @@ export const projects: Project[] = [
     description:
       'Get personalized videos from your favorite celebrities at just one click. Request personalized video messages for your friends, family, loved ones or even yourself. Be it a doubt or even a special wish from your favorite celebrity.',
     repository: null,
-    stack: [Stack.react, Stack.reactnative, Stack.django, Stack.aws],
+    stack: [Stack.c, Stack.computervision, Stack.django, Stack.cplusplus],
     dimensions: [450, 270],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=93fffd15-08ca-4ffc-8fce-47bc269237ee',
@@ -245,7 +245,7 @@ export const projects: Project[] = [
     description:
       'KCards is your one-stop replacement for paper cards. KCards help you to easily share your cards with other users and get real-time analytics on the shared cards.',
     repository: 'https://github.com/karanpratapsingh/KCards',
-    stack: [Stack.react, Stack.reactnative, Stack.node, Stack.mongo],
+    stack: [Stack.c, Stack.cplusplus, Stack.computervision, Stack.CSS],
     dimensions: [450, 270],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fkcards%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=5de462e1-7368-49fd-843f-abd4cccb3317',

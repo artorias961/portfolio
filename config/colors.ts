@@ -1,40 +1,43 @@
 export const Colors = {
   // Languages
-  go: '#00ADD8',
-  python: '#4B8BBE',
-  typescript: '#234A84',
+  c: '#00ADD8',
+  cplusplus: '#4B8BBE',
+  python: '#234A84',
   javascript: '#F7DF1E',
 
   // Frontend
-  web: '#2D2D2D',
-  react: '#61DAF6',
-  nextjs: '#000000',
+  HTML: '#2D2D2D',
+  CSS: '#61DAF6',
+  django: '#000000',
 
   // Backend
-  graphql: '#E535AB',
-  node: '#68A063',
-  django: '#092E20',
+  inteldevcloud: '#E535AB',
+  googlecolab: '#68A063',
+  redis: '#092E20',
 
   // Tools, Libs
-  webpack: '#8DD6F9',
-  babel: '#F5DB53',
-  redux: '#764ABC',
+  CoderedCMS: '#8DD6F9',
+  git: '#F5DB53',
+  docker: '#764ABC',
 
   // Mobile
-  reactnative: '#2D2D2D',
-  android: '#56A036',
-  ios: '#0C76E2',
+  Bash: '#2D2D2D',
+  Linux: '#56A036',
+  arduino: '#0C76E2',
 
   // Databases
-  arangodb: '#68A063',
-  postgres: '#336791',
-  mongo: '#4DB33D',
-  redis: '#D82C20',
+  matlab: '#68A063',
+  raspberrypi: '#336791',
+  ZephyrRTOS: '#4DB33D',
+  VIM: '#D82C20',
 
   // Cloud
-  aws: '#FF9900',
-  gcp: '#4285F4',
-  docker: '#0DB7Ed',
+  computervision: '#FF9900',
+  jupyternotebook: '#4285F4',
+  MachineLearning: '#0DB7Ed',
+
+
+  
   kubernetes: '#326CE5',
   terraform: '#7B42BC',
 
@@ -53,7 +56,7 @@ export const Colors = {
   facebook: '#1877f2',
 
   // Misc.
-  git: '#F1502F',
+  git2: '#F1502F',
   microservices: '#1890ff',
   distributedsystems: '#404040',
   discuss: '#404040',
