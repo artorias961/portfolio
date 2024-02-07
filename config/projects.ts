@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: 'Mechanical Keyboards Design',
     slug: 'MechanicalKeyboard',
-    banner: '/static/projects/mechanical_keyboard.jpg',
+    banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
     website: 'https://peapods.com',
     description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
     shortDescription:
