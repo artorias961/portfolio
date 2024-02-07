@@ -8,7 +8,7 @@
   My portfolio built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
 </p>
 <p align="center">
-  <a href="https://app.netlify.com/sites/karanpratapsingh/deploys" target="_blank">
+  <a href="https://vercel.com/artorias961/christopher-morales" target="_blank">
     <img src="http://therealsujitk-vercel-badge.vercel.app/?app=portfolio&style=for-the-badge" alt="Vercel Status" />
   </a>
 </p>

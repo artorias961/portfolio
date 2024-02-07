@@ -44,12 +44,7 @@ export const projects: Project[] = [
     repository: 'https://github.com/karanpratapsingh/HyperTrade',
     stack: [
       Stack.computervision,
-      Stack.cplusplus,
-      Stack.c,
-      Stack.CSS,
       Stack.python,
-      Stack.VIM,
-      Stack.CoderedCMS,
     ],
     dimensions: [360, 640],
     screenshots: [
@@ -67,9 +62,9 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    title: 'Peapods',
-    slug: 'peapods',
-    banner: '/static/projects/peapods/banner.png',
+    title: 'Mechanical Keyboards Design',
+    slug: 'MechanicalKeyboard',
+    banner: '/static/projects/mechanical_keyboard.jpg',
     website: 'https://peapods.com',
     description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
     shortDescription:
