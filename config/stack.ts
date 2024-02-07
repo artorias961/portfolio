@@ -72,7 +72,6 @@ export const WorkStack = [
   Stack.redis,
   Stack.CoderedCMS,
   Stack.docker,
-  Stack.redis,
   Stack.git,
   Stack.jupyternotebook,
   Stack.MachineLearning,
