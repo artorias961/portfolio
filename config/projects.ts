@@ -35,13 +35,13 @@ export const projects: Project[] = [
   {
     title: '3D Geometry Reconstruction of Medical Images',
     slug: '3DGeometryReconstructionOfMedicalImages',
-    banner: '/static/projects/hypertrade/banner.png',
-    website: 'https://github.com/karanpratapsingh/HyperTrade',
+    banner: '/static/projects/3DGeometryReconstructionOfMedicalImages/3DGeometryReconstructionOfMedicalImages.png',
+    website: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
     description:
-      'Ready to deploy, distributed cryptocurrency trading bot. The idea of this project originally came from a script I used to automate buying and selling of fiat assets. I was curious and wanted to scale it into a real system which can execute trades for me. I had a lot of fun building this. I got to play with lots of different technologies while growing my financial knowledge.',
+      'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image. The goal was to provide a detailed 3D model that could be easily manipulated for use in the medical field. The focus was on Magnetic Resonance Images (MRI) of the pelvic anatomy of women patients, with an emphasis on three main organs, the bladder, vagina, and rectum. To construct the 3D models from the MRI scans computer vision was utilized as the main tool for image analysis. An object detection tool was developed and trained to detect, differentiate, and label the bladder, vagina, and rectum. These same images were converted to a greyscale, which allowed the organs of interest to be isolated as well as identified by drawing contours around them. An ellipse was then fitted into each contour, and from these ellipses certain parameters could be obtained. Including the center point (x, y, z), the length (l), height (h) and orientation (n). This data can then be utilized to create a 3D CAD model of the patients’ pelvic organs.',
     shortDescription:
-      'Ready to deploy, distributed cryptocurrency trading bot.',
-    repository: 'https://github.com/karanpratapsingh/HyperTrade',
+      'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image.',
+    repository: null,
     stack: [
       Stack.computervision,
       Stack.python,
@@ -57,7 +57,7 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fhypertrade%2Ftelegram.png?alt=media&token=110874dd-fb96-4dd2-b299-12a62b092a04',
     ],
     deployment: {
-      web: 'https://github.com/karanpratapsingh/HyperTrade',
+      web: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
     },
     subProjects: [],
   },
@@ -65,11 +65,11 @@ export const projects: Project[] = [
     title: 'Mechanical Keyboards Design',
     slug: 'MechanicalKeyboard',
     banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
-    website: 'https://peapods.com',
+    website: 'https://github.com/artorias961/Mechanical-Keyboards',
     description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
     shortDescription:
       'Peapods is a new type of decentralized social network that values real human interaction.',
-    repository: null,
+    repository: 'https://github.com/artorias961/Mechanical-Keyboards',
     stack: [
       Stack.javascript,
       Stack.c,
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     ],
     screenshots: [],
     deployment: {
-      web: 'https://peapods.com',
+      web: 'https://github.com/artorias961/Mechanical-Keyboards',
     },
     subProjects: [],
   },

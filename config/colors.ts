@@ -38,7 +38,7 @@ export const Colors = {
 
 
   
-  kubernetes: '#326CE5',
+  KiCAD: '#326CE5',
   terraform: '#7B42BC',
 
   // Messaging
