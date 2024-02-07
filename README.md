@@ -16,3 +16,17 @@
 ## Reference
 This portfolio was built on top of [Tailwind Next JS Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) template which comes with built-in blogs functionality and much more! 
 
+
+## Tree Structure
+
+- Project
+   - config\projects.ts
+
+- Widget Colors
+   - config\color.ts
+
+- Blogs
+   - data\blog
+
+- Skills
+   - config\stack.ts
