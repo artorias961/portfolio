@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/artorias961/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/demxntia.jpg',
-  socialBanner: '/static/demxntia.jpg',
+  socialBanner: '/static/picture.jpg',
   email: 'contact@artorias962.com',
   github: 'https://github.com/artorias961',
   twitter: 'https://twitter.com/',
