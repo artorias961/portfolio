@@ -1,0 +1,146 @@
+---
+title: 'Installing and Setting up Miniforge (A Lightweight Conda Distribution)'
+date: '2024-02-08'
+tags: ['Git']
+draft: false
+summary: 'MiniForge Conda is a minimalistic distribution of Conda, a popular package and environment manager in Python.'
+images: ['/static/blogs/amazing-placeholder-blurhash.jpeg']
+authors: ['default']
+---
+
+## Short Summary
+[MiniForge](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) Conda is a minimalistic distribution of Conda, a popular package and environment manager in Python. It provides a lightweight alternative to Anaconda and Miniconda, offering essential functionalities for managing packages and environments efficiently. This guide provides instructions on installing MiniForge Conda, enabling users to set up Python environments and manage packages seamlessly.
+ 
+
+## Setup
+
+### Downloading MiniForge
+
+To install [MiniForge](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) Conda, visit the official GitHub repository and select the installer compatible with your operating system (Windows, macOS, or Linux). Download the installer script or executable file, open a terminal or command prompt window, and execute the installer. Follow the on-screen instructions to complete the installation process.
+
+**For Linux/macOS**: Use the terminal and run the following command:
+```bash
+bash Miniforge3-Linux-x86_64.sh
+```
+
+**For Windows**: Double-click the executable file and follow the installation wizard prompts.
+
+
+### Conda Init (FOR WINDOWS ONLY)
+
+In PowerShell, **conda init** is used to initialize Conda for the PowerShell environment. This command sets up your PowerShell session to recognize Conda commands and configure the environment for managing Conda environments effectively. Open PowerShell **as an administrators**. In PowerShell, run the following command to initialize Conda:
+```bash
+conda init powershell
+```
+
+or 
+
+```bash
+conda init
+```
+
+### Creating an Environment
+
+To create the *What_Ever_Name_You_Want* environment, open Miniforge Prompt or Mambaforge Prompt (whichever comes up in the start menu search).
+
+Then, run the following command:
+```bash
+mamba create -n ee5830
+```
+
+or
+
+```bash
+mamba create -n ee5830 python=3.10
+```
+
+*"python=3.10 just means what version of python*
+
+
+
+## Activate/Use or Deactivate/Leave the Environment
+
+To activate this environment use:
+```bash
+conda activate ee5830
+```
+
+To deactivate an active environment, use:
+```bash
+conda deactivate ee5830
+```
+
+### Installing libraries to the Environment
+For installing any library, you have two options to choose from. First, we'll utilize **pip**, followed by **conda**.
+
+
+<details>
+- **pip**:
+
+   - *pip* is the package installer for Python.
+   - It's used to install Python packages from the Python Package Index (PyPI) or other sources.
+   - *pip* installs packages in isolated locations (virtual environments) by default.
+   - It primarily installs Python packages only, and it doesn't handle non-Python dependencies.
+
+- **conda**:
+
+   - *conda* is a package and environment manager.
+   - It's used to install software packages and manage environments for any language—not just Python.
+   - *conda* can install both Python and non-Python packages, including libraries, dependencies, and executables.
+   - It creates isolated environments where packages and their dependencies can be installed without interfering with other environments.
+   - *Conda* is particularly popular in the data science and scientific computing communities due to its ability to handle complex dependencies efficiently.
+
+- **Differences**:
+
+   - *Package Source*:
+      - pip installs packages from PyPI primarily.
+      - conda installs packages from the Anaconda repository or other channels.
+
+   - *Environment Management*:
+      - pip relies on virtual environments (like venv) for isolating packages.
+      - conda has its own environment management system, allowing for more flexibility and handling of non-Python dependencies.
+
+   - *Language Support*:
+      - pip is Python-specific.
+      - conda can manage packages for any language.
+
+   - *Dependency Management*:
+      - pip installs Python packages and their dependencies only.
+      - conda can handle both Python and non-Python dependencies, making it more robust for complex software stacks.
+
+</details>
+
+To install a libray using **pip**, we do the following:
+```bash
+pip install library_name
+```
+
+To install a libray using **conda**, we do the following:
+```bash
+pip install library_name
+```
+<details>
+To install specific versions of a library, follow these steps (applicable to both pip and conda):
+```bash
+pip install opencv==4.5.5
+```
+</details>
+
+## Setting up Visual Studio Code for use with the Our Own Environment
+
+### Downloading Python Extension in VS Code
+For the first time running the editor, setup your personal preferences. 
+
+
+
+
+
+
+
+
+
+## Conclusion
+
+
+
+
