@@ -1,7 +1,7 @@
 ---
 name: Christopher Morales
 shortname: Christopher Morales
-avatar: /static/demxntia.jpg
+avatar: /static/picture.jpg
 occupation: Electrical Engineer
 company: Graduate Student
 resume: /static/Christopher_Morales_Electrical_Engineer_V7_2.pdf

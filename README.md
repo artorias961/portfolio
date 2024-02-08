@@ -30,3 +30,9 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
 
 - Skills
    - config\stack.ts
+
+- Social Icon
+   - components\SocialIcons.tsx
+
+- About Me Page
+   - data\authors\default.md
