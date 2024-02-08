@@ -34,7 +34,7 @@ export const Colors = {
   // Cloud
   computervision: '#FF9900',
   jupyternotebook: '#4285F4',
-  MachineLearning: '#0DB7Ed',
+  MachineLearning: '#0DB7Ed', 
 
 
   

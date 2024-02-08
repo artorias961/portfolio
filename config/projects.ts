@@ -77,7 +77,9 @@ export const projects: Project[] = [
       Stack.KiCAD,
       Stack.c,
     ],
-    screenshots: [],
+    screenshots: [
+      'https://drive.google.com/file/d/1Nu71BjO6F7ncNNS5YWNY-oZo9ZDx5gV2/view?usp=drive_link'
+    ],
     deployment: {
       web: 'https://github.com/artorias961/Mechanical-Keyboards',
     },
@@ -100,6 +102,7 @@ export const projects: Project[] = [
       Stack.ROS,
       Stack.python,
       Stack.ZephyrRTOS,
+      Stack.Linux,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=a9b5a094-8a16-4c84-af16-65bf2378d7d9',
@@ -125,7 +128,7 @@ export const projects: Project[] = [
     title: 'IoT Edge Node of Home Assistant',
     slug: 'IoT-Edge-Node-of-Home-Assistant',
     banner: '/static/projects/velvet-live/banner.png',
-    website: 'https://github.com/artorias961/nRF-Sensor-Django-Project',
+    website: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
     description: `This project utilizes Nordic Semiconductor's nRF52DK and STM X-NUCLEO-IKS01A3 to create a sensor-based system. Employing ZephyrRTOS and Bluetooth Low Energy (BLE), the nRF52DK gathers data from sensors like LSM6DSO (MEMS 3D accelerometer + 3D gyroscope), LIS2MDL (MEMS 3D magnetometer), LIS2DW12 (MEMS 3D accelerometer), LPS22HH (MEMS pressure sensor), HTS221 (capacitive digital relative humidity and temperature), and STTS751 (temperature). The goal is to develop a simplified system akin to Raspberry Pi Home Assistant, leveraging the Django framework. Data transfer occurs via Bluetooth GATT, where the nRF52DK acts as a BLE server reading commands from Redis messages hosted on Docker. Responses are then relayed back to the Django server via Redis pub/sub channels. Utilizing Django Channels, WebSocket messages are transmitted to the Django site router and then to the internet for further processing.`,
     repository: null,
     stack: [
@@ -136,7 +139,8 @@ export const projects: Project[] = [
       Stack.redis,
       Stack.django,
       Stack.python,
-      
+      Stack.HTML,
+      Stack.CSS,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=b9b044ce-a3af-402f-a1db-1ae61621bb18',
@@ -149,7 +153,7 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-4.png?alt=media&token=3dcdc3bd-cbb7-4d8e-9368-306158cce40d',
     ],
     deployment: {
-      web: 'https://github.com/artorias961/nRF-Sensor-Django-Project',
+      web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
       //android: 'https://play.google.com/store/apps/details?id=app.boom.mobile',
     },
     subProjects: [],
@@ -157,14 +161,14 @@ export const projects: Project[] = [
 
   // Project 5 <-----------------------------------------------------
   {
-    title: 'Celebrify',
-    slug: 'celebrify',
-    website: 'https://celebrify.in',
-    banner: '/static/projects/celebrify/banner.jpeg',
+    title: 'Dynamic WebSocket REST API: Empowering Real-Time Communication and Custom Requests',
+    slug: 'Dynamic-WebSocket-REST-API:-Empowering-Real-Time-Communication-and-Custom-Requests',
+    website: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
+    banner: '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/rest_api.jpg',
     description:
-      'Get personalized videos from your favorite celebrities at just one click. Request personalized video messages for your friends, family, loved ones or even yourself. Be it a doubt or even a special wish from your favorite celebrity.',
+      'The project entails the creation of a WebSocket REST API using Python, aimed at enabling communication between clients and a local host computer, facilitated through the Insomnia REST API tool. By sending custom requests, users establish a handshake with the server, which provides access to various directories, each containing specific content. Notably, directory paths such as "/", "/intro", "/greet", and "/bluetooth" grant access to distinct sets of data, with subdirectories like "/scan_local", "/add_device", and "/list_devices" offering further granularity within the "/bluetooth" category. This setup allows users to retrieve content tailored to their needs dynamically. Leveraging WebSocket technology ensures real-time communication, fostering interactive exchanges between clients and the server, thus enhancing the overall user experience and utility of the API.',
     repository: null,
-    stack: [Stack.c, Stack.computervision, Stack.django, Stack.cplusplus],
+    stack: [Stack.python, Stack.HTML],
     dimensions: [450, 270],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=93fffd15-08ca-4ffc-8fce-47bc269237ee',
@@ -175,10 +179,10 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-6.png?alt=media&token=7794ae58-7e3a-45c5-a47a-6c86b909e423',
     ],
     deployment: {
-      web: 'https://celebrify.in',
-      android:
-        'https://play.google.com/store/apps/details?id=com.celebrify.app',
-      ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
+      web: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
+      // android:
+        // 'https://play.google.com/store/apps/details?id=com.celebrify.app',
+      // ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
     },
     subProjects: [],
   },
