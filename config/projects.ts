@@ -71,12 +71,8 @@ export const projects: Project[] = [
       'Peapods is a new type of decentralized social network that values real human interaction.',
     repository: 'https://github.com/artorias961/Mechanical-Keyboards',
     stack: [
-      Stack.javascript,
+      Stack.KiCAD,
       Stack.c,
-      Stack.cplusplus,
-      Stack.computervision,
-      Stack.CSS,
-      Stack.CoderedCMS,
     ],
     screenshots: [],
     deployment: {
@@ -85,19 +81,20 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    title: 'Proximity',
-    slug: 'proximity',
-    website: 'https://proximity-mobile.web.app',
-    banner: '/static/projects/proximity/banner.jpeg',
+    title: 'Robotics Dog',
+    slug: 'RoboticsDog',
+    website: 'https://github.com/artorias961/robotics-dog',
+    banner: '/static/projects/Robotic_Dog/robotic_dog.jpg',
     description:
-      'An open source social media app that does not use your data against you.',
-    repository: 'https://github.com/karanpratapsingh/Proximity',
+      'The purpose of this project is to create a tour bot that will guide Cal State LA guests to locations on campus. The tour bot will be given a dataset of the school building’s floor plans and a predetermined path to follow. The bot will be a mobile platform that will incorporate computer vision to identify obstacles and facilitate localization. The collection of sensors used to navigate the environment may also incorporate LiDAR, ultrasonics, cameras, IR proximity, and a GPS module that will focus on gathering data of the surrounding environment. While the internal sensors will consist of IMUs, position sensors, load sensors, and current sensors. The sensors will report to slaved microcontrollers that will feed into the microprocessor. Ubuntu is currently the planned operating system to control high level algorithms. The control software will dictate commands to the tour bot actuators consisting of servo, stepper, and brushless motors. Electronic subsystems will be used to power the motors and to regulate the power supply. The majority of the tour bot chassis will be a 3D printed, built around a load bearing internal frame.',
+    repository: 'https://github.com/artorias961/robotics-dog',
     stack: [
       Stack.cplusplus,
       Stack.c,
       Stack.computervision,
-      Stack.CoderedCMS,
+      Stack.ROS,
       Stack.python,
+      Stack.ZephyrRTOS,
     ],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=a9b5a094-8a16-4c84-af16-65bf2378d7d9',
@@ -110,10 +107,10 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
     ],
     deployment: {
-      web: 'https://proximity-mobile.web.app',
-      android:
-        'https://play.google.com/store/apps/details?id=com.proximity.app',
-      ios: 'https://apps.apple.com/us/app/proximity-app/id1489041006',
+      web: 'https://github.com/artorias961/robotics-dog',
+      //android:
+        //'https://play.google.com/store/apps/details?id=com.proximity.app',
+      //ios: 'https://apps.apple.com/us/app/proximity-app/id1489041006',
     },
     subProjects: [],
   },

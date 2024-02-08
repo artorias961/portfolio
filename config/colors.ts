@@ -39,7 +39,7 @@ export const Colors = {
 
   
   KiCAD: '#326CE5',
-  terraform: '#7B42BC',
+  ROS: '#7B42BC',
 
   // Messaging
   nats: '#199bfc',

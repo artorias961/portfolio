@@ -56,6 +56,7 @@ export enum Stack {
   jupyternotebook,
   MachineLearning,
   KiCAD,
+  ROS,
 
 
 }
@@ -77,6 +78,7 @@ export const WorkStack = [
   Stack.jupyternotebook,
   Stack.MachineLearning,
   Stack.KiCAD,
+  Stack.ROS,
   // Stack.reactnative,
 ];
 
@@ -181,5 +183,9 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.KiCAD]: {
     value: 'KiCAD',
     color: Colors.KiCAD,
+  },
+  [Stack.ROS]: {
+    value: 'ROS',
+    color: Colors.ROS,
   },
 };
