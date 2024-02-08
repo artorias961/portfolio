@@ -77,7 +77,7 @@ export const projects: Project[] = [
       Stack.KiCAD,
       Stack.c,
     ],
-    dimensions: [990, 400],
+    dimensions: [99, 40],
     screenshots: [
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard_back.png',
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard.png',
