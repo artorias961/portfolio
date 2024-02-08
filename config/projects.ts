@@ -77,6 +77,7 @@ export const projects: Project[] = [
       Stack.KiCAD,
       Stack.c,
     ],
+    dimensions: [640, 360],
     screenshots: [
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard_back.png',
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard.png',
@@ -129,7 +130,7 @@ export const projects: Project[] = [
   {
     title: 'IoT Edge Node of Home Assistant',
     slug: 'IoT-Edge-Node-of-Home-Assistant',
-    banner: '/static/projects/IoT-Edge-Node-of-Home-Assistant/final_project.png',
+    banner: '/static/projects/IoT-Edge-Node-of-Home-Assistant/final_project.jpg',
     website: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
     description: `This project utilizes Nordic Semiconductor's nRF52DK and STM X-NUCLEO-IKS01A3 to create a sensor-based system. Employing ZephyrRTOS and Bluetooth Low Energy (BLE), the nRF52DK gathers data from sensors like LSM6DSO (MEMS 3D accelerometer + 3D gyroscope), LIS2MDL (MEMS 3D magnetometer), LIS2DW12 (MEMS 3D accelerometer), LPS22HH (MEMS pressure sensor), HTS221 (capacitive digital relative humidity and temperature), and STTS751 (temperature). The goal is to develop a simplified system akin to Raspberry Pi Home Assistant, leveraging the Django framework. Data transfer occurs via Bluetooth GATT, where the nRF52DK acts as a BLE server reading commands from Redis messages hosted on Docker. Responses are then relayed back to the Django server via Redis pub/sub channels. Utilizing Django Channels, WebSocket messages are transmitted to the Django site router and then to the internet for further processing.`,
     repository: null,
