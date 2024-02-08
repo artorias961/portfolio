@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://christopher-morales.vercel.app',
   siteRepo: 'https://github.com/artorias961/portfolio',
   siteLogo: '/static/images/logo.png',
-  image: '/static/picture.jpg',
+  image: '/static/pictur.jpg',
   socialBanner: '/static/demxntia.jpg',
   email: 'contact@artorias962.com',
   github: 'https://github.com/artorias961',
