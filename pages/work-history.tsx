@@ -23,13 +23,7 @@ const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
   );
 };
 
-const parseDateString = (dateString) => {
-  if (dateString.toLowerCase() === 'present') {
-    return new Date();
-  }
-  const [month, year] = dateString.split(' ');
-  return new Date(`${month} 1, ${year}`);
-};
+
 
 const WorkHistory = () => {
   const workItems = [
@@ -50,12 +44,6 @@ const WorkHistory = () => {
     // More work items here
   ];
 
-  // Sort the work items by the start date in descending order
-  workItems.sort((a, b) => {
-    const dateA = parseDateString(a.date.split(' - ')[0]);
-    const dateB = parseDateString(b.date.split(' - ')[0]);
-    return dateB - dateA;
-  });
 
   return (
     <div>
