@@ -1,4 +1,5 @@
 import React from 'react';
+import { parseISO, compareDesc } from 'date-fns';
 
 const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
   return (
@@ -25,6 +26,7 @@ const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
 
 const WorkHistory = () => {
   const workItems = [
+    // Sample History
     {
       company: 'Company A',
       title: 'Software Engineer',
@@ -37,8 +39,20 @@ const WorkHistory = () => {
       repo: 'https://github.com/example-repo',
       location: 'New York, NY'
     },
+
     // More work items here
   ];
+
+    // Sort the work items by the end date, considering 'Present' as the latest date
+    workItems = workItems.map(item => ({
+      ...item,
+      // Convert 'Present' to current date, or parse the end date
+      sortedDate: item.date.split(' - ')[1] === 'Present' ? new Date() : parseISO(item.date.split(' - ')[1]),
+    })).sort((a, b) => compareDesc(a.sortedDate, b.sortedDate)).map(item => {
+      // Remove the 'sortedDate' before rendering
+      const { sortedDate, ...rest } = item;
+      return rest;
+    });
 
   return (
     <div>
