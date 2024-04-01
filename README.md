@@ -37,6 +37,8 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
 - About Me Page
    - data\authors\default.md
 
+- Navigation bar (top section/universal links)
+   - /data/headerNavLins.ts
 
 - To add a new page/section
    - pages/
