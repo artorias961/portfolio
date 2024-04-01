@@ -33,8 +33,8 @@ function Banner(props: BannerProps): React.ReactElement {
             about me
           </RoughNotation>
         </Link>
-        or
-        <Link className='ml-2 font-normal text-black' href='/contact'>
+        or view my 
+        <Link className='ml-2 font-normal text-black' href='/work-history'>
           <RoughNotation
             show
             type='highlight'
@@ -42,7 +42,7 @@ function Banner(props: BannerProps): React.ReactElement {
             animationDuration={2000}
             color={contactColor}
           >
-            contact me
+            Work History
           </RoughNotation>
         </Link>
       </p>

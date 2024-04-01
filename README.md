@@ -38,9 +38,20 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
    - data\authors\default.md
 
 - Navigation bar (top section/universal links)
-   - /data/headerNavLins.ts
+   - data\headerNavLinks.ts
+
+- Footer
+   - components\Footer.tsx
+
+- Metadata
+   - data\siteMetadata.js
+
+- Home Page (need to modify those two files)
+   - components\banner.tsx
+   - data\siteMetadata.js
+   - data\headerNavLinks.ts
 
 - To add a new page/section
-   - pages/
+   - pages\
       - Then create a file using the *.tsx* file extension
       - Create a style for the page, how it will look
