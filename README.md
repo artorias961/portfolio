@@ -36,3 +36,9 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
 
 - About Me Page
    - data\authors\default.md
+
+
+- To add a new page/section
+   - pages/
+      - Then create a file using the *.tsx* file extension
+      - Create a style for the page, how it will look
