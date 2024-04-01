@@ -2,23 +2,23 @@ import React from 'react';
 
 const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
   return (
-    <div className="mb-8 flex flex-col md:flex-row md:justify-between">
-      <div className="flex-1">
-        <p className="text-gray-600">{title}</p>
-        <ul className="list-disc ml-5 my-4">
-          {tasks.map((task, index) => (
-            <li key={index}>{task}</li>
-          ))}
-        </ul>
-        {repo && (
-          <a href={repo} className="text-blue-500 hover:underline">GitHub Repository</a>
-        )}
-      </div>
-      <div className="flex-1 text-right">
+    <div className="mb-8">
+      <div className="flex justify-between items-center">
         <h3 className="text-2xl font-semibold">{company}</h3>
         <p className="text-gray-500">{date}</p>
+      </div>
+      <div className="flex justify-between items-center my-1">
+        <p className="italic">{title}</p>
         <p className="text-gray-500">{location}</p>
       </div>
+      <ul className="list-disc pl-5 my-2">
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
+      {repo && (
+        <a href={repo} className="text-blue-500 hover:underline">GitHub Repository</a>
+      )}
     </div>
   );
 };
