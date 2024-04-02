@@ -28,18 +28,18 @@ const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
 const WorkHistory = () => {
   const workItems = [
     // Sample History
-    {
-      company: 'Company A',
-      title: 'Software Engineer',
-      date: 'June 2020 - Present',
-      tasks: [
-        'Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery',
-        'Managed time-sensitive updates, including content changes and database upgrades',
-        'Planned, wrote, and debugged web applications and software with complete accuracy'
-      ],
-      repo: 'https://github.com/example-repo',
-      location: 'New York, NY'
-    },
+    // {
+    //   company: 'Company A',
+    //   title: 'Software Engineer',
+    //   date: 'June 2020 - Present',
+    //   tasks: [
+    //     'Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery',
+    //     'Managed time-sensitive updates, including content changes and database upgrades',
+    //     'Planned, wrote, and debugged web applications and software with complete accuracy'
+    //   ],
+    //   repo: 'https://github.com/example-repo',
+    //   location: 'New York, NY'
+    // },
 
     
 
