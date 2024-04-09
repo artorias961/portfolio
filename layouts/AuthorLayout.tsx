@@ -61,6 +61,12 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                 </RoughNotation>
               </a>
               {'                        '}
+              {'                        '}
+              {'                        '}
+              {'                        '}
+              {'                        '}
+              {'                        '}
+              {'                        '}
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
                 href={bachelors_diploma}
