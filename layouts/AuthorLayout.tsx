@@ -60,6 +60,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   Resume
                 </RoughNotation>
               </a>
+            
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
                 href={bachelors_diploma}
@@ -71,7 +72,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   type='box'
                   animationDelay={250}
                   animationDuration={2000}
-                  strokeWidth={2}
+                  strokeWidth={4}
                   color={resumeColor}
                 >
                   Bachelor's Diploma
