@@ -44,7 +44,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             {children}
             <p className='mt-8'>
               <a
-                className='!font-normal !text-black !no-underline dark:!text-white mr-2'
+                className='!font-normal !text-black !no-underline dark:!text-white mr-4'
                 href={resume}
                 target='_blank'
                 rel='noreferrer'
@@ -62,7 +62,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               </a>
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
-                style={{marginRight: '3rem'}}
+                style={{marginRight: '1rem'}}
                 href={bachelors_diploma}
                 target='_blank'
                 rel='noreferrer'
