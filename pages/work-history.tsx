@@ -110,7 +110,7 @@ const WorkHistory = () => {
       tasks: [
         'Oversaw the establishment and operation of the Dry Lab Makerspace for approximately 40 students, creating an innovative environment for both STEM and non-STEM learners to develop and execute projects',
         'Provided hands-on assistance and instruction in Python programming, helping students develop coding skills applicable in various project contexts',
-        'Taught practical skills such as using a multimeter, soldering, and light firmware coding (specifically Marlin), enhancing students technical abilities'
+        
       ],
       repo: null,
       location: 'Los Angeles, CA'

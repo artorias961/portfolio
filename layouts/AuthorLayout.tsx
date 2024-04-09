@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-  const { name, avatar, occupation, company, resume } = frontMatter;
+  const { name, avatar, occupation, company, resume, bachelors_diploma } = frontMatter;
   const [resumeColor] = useRandomColorPair();
 
   return (

@@ -6,6 +6,7 @@ export type AuthorFrontMatter = {
   occupation: string;
   company: string;
   resume: string;
+  bachelors_diploma: string;
   email: string;
   twitter: string;
   linkedin: string;
