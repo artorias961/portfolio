@@ -46,6 +46,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
                 href={resume}
+                href={bachelors_diploma}
                 target='_blank'
                 rel='noreferrer'
               >

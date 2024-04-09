@@ -25,7 +25,7 @@ import React from 'react';
 
 const WorkHistoryItem = ({ company, title, date, tasks, repo, location }) => {
   return (
-    <div className="mb-8  shadow-lg rounded-lg p-6">
+    <div className="mb-8 shadow-lg rounded-lg p-6">
       <div className="flex justify-between items-center">
         <h3 className="text-2xl font-semibold">{company}</h3>
         <p className="text-gray-500">{date}</p>
