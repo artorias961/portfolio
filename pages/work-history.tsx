@@ -68,9 +68,21 @@ const WorkHistory = () => {
 
 
 
-
+    // Job 10
 
     // Job 9
+    {
+      company: 'Smart Program VR/AR/XR tech for virtual learning space',
+      title: 'Team Lead',
+      date: 'Jan 2024 - Present',
+      tasks: [
+        'Integrated generative AI technologies to enhance creativity among 23 interns, minimizing reliance on technical prerequisites',
+        'Developed a comprehensive virtual lab environment using COLMAP, Unity, and LucidVR gloves, enhancing user interaction and realism in virtual settings',
+        'Integrated advanced photogrammetry software to process images into precise 3D models',
+      ],
+      repo: null,
+      location: 'Los Angeles, CA'
+    },
 
     // Job 8 
     {
