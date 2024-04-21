@@ -190,7 +190,7 @@ export const projects: Project[] = [
   title: 'My Second Personal Portfolio Website',
   slug: 'personal-portfolio-website',
   website: 'https://christopher-morales.vercel.app',
-  banner: '/static/projects/Portfolio/Portfolio.png',
+  banner: '/static/projects/Portfolio/portfolio.png',
   description:
     'This is my second portfolio (the one you are currently viewing), which utilizes an open-source template from the Tailwind Next.js Starter Blog. Hosted on Vercel and powered by Next.js, this portfolio is a realization of my dream to create and enhance a website with numerous features—features I never thought I would be able to use one day. I am extremely proud of this achievement and excited about my next project. I plan to build another website from scratch using the Django framework and hope to share it with all of you in the near future!',
     repository: 'https://github.com/artorias961/portfolio',
