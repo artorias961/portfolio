@@ -147,7 +147,9 @@ export const projects: Project[] = [
       Stack.HTML,
       Stack.CSS,
     ],
-    screenshots: [null],
+    screenshots: [
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+    ],
     deployment: {
       web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
       //android: 'https://play.google.com/store/apps/details?id=app.boom.mobile',
@@ -173,7 +175,9 @@ export const projects: Project[] = [
         Stack.NodeJs,
       ],
 
-    screenshots: [null],
+    screenshots: [
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+    ],
     // dimensions: [450, 270],
     deployment: {
       web: 'https://github.com/artorias961/artorias961.github.io'
@@ -200,7 +204,9 @@ export const projects: Project[] = [
       Stack.KaTeX,
       Stack.NodeJs,
     ],
-  screenshots: [null],
+  screenshots: [
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+  ],
   // dimensions: [450, 270],
   deployment: {
     web: 'https://christopher-morales.vercel.app'
@@ -225,7 +231,9 @@ export const projects: Project[] = [
       Stack.jupyternotebook,
     ],
 
-  screenshots: [null],
+  screenshots: [
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+  ],
   // dimensions: [450, 270],
   deployment: {
     web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
