@@ -37,12 +37,12 @@ export const projects: Project[] = [
     title: '3D Geometry Reconstruction of Medical Images',
     slug: '3D-Geometry-Reconstruction-Of-Medical-Images',
     banner: '/static/projects/3DGeometryReconstructionOfMedicalImages/medical_images.png',
-    website: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
+    website: null,
     description:
       'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image. The goal was to provide a detailed 3D model that could be easily manipulated for use in the medical field. The focus was on Magnetic Resonance Images (MRI) of the pelvic anatomy of women patients, with an emphasis on three main organs, the bladder, vagina, and rectum. To construct the 3D models from the MRI scans computer vision was utilized as the main tool for image analysis. An object detection tool was developed and trained to detect, differentiate, and label the bladder, vagina, and rectum. These same images were converted to a greyscale, which allowed the organs of interest to be isolated as well as identified by drawing contours around them. An ellipse was then fitted into each contour, and from these ellipses certain parameters could be obtained. Including the center point (x, y, z), the length (l), height (h) and orientation (n). This data can then be utilized to create a 3D CAD model of the patients’ pelvic organs.',
     shortDescription:
       'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image.',
-    repository: null,
+    repository: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
     stack: [
       Stack.computervision,
       Stack.python,
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: 'Mechanical Keyboards Design',
     slug: 'Mechanical-Keyboard',
     banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
-    website: 'https://github.com/artorias961/Mechanical-Keyboards',
+    website: null,
     description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
     shortDescription:
       'Peapods is a new type of decentralized social network that values real human interaction.',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     title: 'Robotics Dog',
     slug: 'Robotics-Dog',
-    website: 'https://github.com/artorias961/robotics-dog',
+    website: null,
     banner: '/static/projects/Robotic_Dog/robotic_dog.jpg',
     description:
       'The purpose of this project is to create a tour bot that will guide Cal State LA guests to locations on campus. The tour bot will be given a dataset of the school building’s floor plans and a predetermined path to follow. The bot will be a mobile platform that will incorporate computer vision to identify obstacles and facilitate localization. The collection of sensors used to navigate the environment may also incorporate LiDAR, ultrasonics, cameras, IR proximity, and a GPS module that will focus on gathering data of the surrounding environment. While the internal sensors will consist of IMUs, position sensors, load sensors, and current sensors. The sensors will report to slaved microcontrollers that will feed into the microprocessor. Ubuntu is currently the planned operating system to control high level algorithms. The control software will dictate commands to the tour bot actuators consisting of servo, stepper, and brushless motors. Electronic subsystems will be used to power the motors and to regulate the power supply. The majority of the tour bot chassis will be a 3D printed, built around a load bearing internal frame.',
