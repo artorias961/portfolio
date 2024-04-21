@@ -178,7 +178,7 @@ export const projects: Project[] = [
     deployment: {
       web: 'https://github.com/artorias961/artorias961.github.io'
     },
-    subProjects: []
+    subProjects: [] 
   },
 
 // Project 6 <-----------------------------------------------------
