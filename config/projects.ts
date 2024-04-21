@@ -187,10 +187,10 @@ export const projects: Project[] = [
 
 // Project 6 <-----------------------------------------------------
 {
-  title: 'Personal Portfolio Website: Showcasing Development Projects and Skills',
-  slug: 'personal-portfolio-website-showcasing-development-projects-and-skills',
+  title: 'My Second Personal Portfolio Website',
+  slug: 'personal-portfolio-website',
   website: 'https://christopher-morales.vercel.app',
-  banner: '/static/projects/personal-portfolio/personal_portfolio.jpg',
+  banner: '/static/projects/Portfolio/Portfolio.png',
   description:
     'This is my second portfolio (the one you are currently viewing), which utilizes an open-source template from the Tailwind Next.js Starter Blog. Hosted on Vercel and powered by Next.js, this portfolio is a realization of my dream to create and enhance a website with numerous features—features I never thought I would be able to use one day. I am extremely proud of this achievement and excited about my next project. I plan to build another website from scratch using the Django framework and hope to share it with all of you in the near future!',
     repository: 'https://github.com/artorias961/portfolio',
@@ -218,8 +218,8 @@ export const projects: Project[] = [
 
 // Project 7 <-----------------------------------------------------
 {
-  title: 'Deep Learning Neural Network for SnakeIO Game: Enhancing AI Performance',
-  slug: 'deep-learning-neural-network-for-snakeio-game-enhancing-ai-performance',
+  title: 'Deep Learning Neural Network for SnakeIO Game',
+  slug: 'deep-learning-neural-network-for-snakeio-game',
   website: null,
   banner: '/static/projects/snakeio-neural-network/snakeio_game.jpg',
   description:
