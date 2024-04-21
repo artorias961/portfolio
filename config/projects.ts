@@ -226,7 +226,7 @@ export const projects: Project[] = [
     ],
 
   screenshots: null,
-  dimensions: [450, 270],
+  // dimensions: [450, 270],
   deployment: {
     web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
   },
