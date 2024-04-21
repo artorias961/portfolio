@@ -58,6 +58,17 @@ export enum Stack {
   KiCAD,
   ROS,
 
+  // More stuff
+  SCSS,
+  NodeJs,
+  reactnative,
+  NextJs,
+  TypeScript,
+  KaTeX,
+  LaTeX,
+  MDX,
+  PyTorch,
+
 
 }
 
@@ -79,6 +90,15 @@ export const WorkStack = [
   Stack.MachineLearning,
   Stack.KiCAD,
   Stack.ROS,
+  Stack.SCSS,
+  Stack.NodeJs,
+  Stack.reactnative,
+  Stack.NextJs,
+  Stack.TypeScript,
+  Stack.KaTeX,
+  Stack.LaTeX,
+  Stack.MDX,
+  Stack.PyTorch,
   // Stack.reactnative,
 ];
 
@@ -188,4 +208,46 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'ROS',
     color: Colors.ROS,
   },
+  
+
+
+
+
+  [Stack.SCSS]: {
+    value: 'SCSS',
+    color: Colors.SCSS,
+  },
+  [Stack.NodeJs]: {
+    value: 'NodeJs',
+    color: Colors.NodeJs,
+  },
+  [Stack.reactnative]: {
+    value: 'ReactNative',
+    color: Colors.ReactNative,
+  },
+  [Stack.NextJs]: {
+    value: 'NextJs',
+    color: Colors.NextJs,
+  },
+  [Stack.TypeScript]: {
+    value: 'TypeScript',
+    color: Colors.TypeScript,
+  },
+  [Stack.KaTeX]: {
+    value: 'KaTeX',
+    color: Colors.KaTeX,
+  },
+  [Stack.LaTeX]: {
+    value: 'LaTeX',
+    color: Colors.LaTeX,
+  },
+  [Stack.MDX]: {
+    value: 'MDX',
+    color: Colors.MDX,
+  },
+  [Stack.PyTorch]: {
+    value: 'PyTorch',
+    color: Colors.PyTorch,
+  },
+
 };

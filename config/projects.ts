@@ -164,8 +164,17 @@ export const projects: Project[] = [
     description:
       'This is my first venture into website development. I learned how to use HTML, CSS, JS, Node.js, SCSS, and Python. I added my projects to this simple portfolio. Note that I had a lot of fun learning from web development, but I eventually switched to my current portfolio (the one you are currently viewing). It took a long time to master all these skills, and I am proud of this initial portfolio, even though it may not look as polished as professional sites.',
     repository: 'https://github.com/artorias961/artorias961.github.io',
-      stack: ['HTML', 'CSS', 'JavaScript', 'SCSS', 'Node.Js', 'Python'],
-    dimensions: [450, 270],
+      stack: [
+        Stack.HTML,
+        Stack.CSS,
+        Stack.javascript,
+        Stack.python,
+        Stack.SCSS,
+        Stack.NodeJs,
+      ],
+
+    screenshots: null,
+    // dimensions: [450, 270],
     deployment: {
       web: 'https://github.com/artorias961/artorias961.github.io'
     },
@@ -181,8 +190,18 @@ export const projects: Project[] = [
   description:
     'This is my second portfolio (the one you are currently viewing), which utilizes an open-source template from the Tailwind Next.js Starter Blog. Hosted on Vercel and powered by Next.js, this portfolio is a realization of my dream to create and enhance a website with numerous features—features I never thought I would be able to use one day. I am extremely proud of this achievement and excited about my next project. I plan to build another website from scratch using the Django framework and hope to share it with all of you in the near future!',
     repository: 'https://github.com/artorias961/portfolio',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'TypeScript', 'MDX', 'KaTeX', 'Node.js'],
-  dimensions: [450, 270],
+    stack: [
+      Stack.HTML,
+      Stack.CSS,
+      Stack.javascript,
+      Stack.NextJs,
+      Stack.TypeScript,
+      Stack.MDX,
+      Stack.KaTeX,
+      Stack.NodeJs,
+    ],
+  screenshots: null,
+  // dimensions: [450, 270],
   deployment: {
     web: 'https://christopher-morales.vercel.app'
   },
@@ -200,13 +219,19 @@ export const projects: Project[] = [
   description:
     'This project involves the development of a sophisticated deep learning neural network designed to control and enhance the AI of a SnakeIO game. The neural network uses Python and PyTorch to analyze real-time gameplay data, optimizing decision-making processes and improving the AI’s in-game performance. The system’s architecture allows for continuous learning and adaptation, providing a challenging experience for players.',
   repository: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game',
-    stack: ['Python', 'PyTorch', 'Jupyter Lab'],
+    stack: [
+      Stack.python,
+      Stack.PyTorch,
+      Stack.jupyternotebook,
+    ],
+
+  screenshots: null,
   dimensions: [450, 270],
   deployment: {
     web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
   },
   subProjects: []
-}
+},
 
 
 

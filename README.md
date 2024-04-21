@@ -25,6 +25,7 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
 
 - Widget Colors
    - config\color.ts
+   - config\stack.ts
 
 - Blogs
    - data\blog
