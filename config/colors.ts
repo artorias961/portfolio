@@ -50,7 +50,7 @@ export const Colors = {
   KaTeX: '#A663CC',
   LaTeX: '#3D6117',
   MDX: '#FA7900',
-  PyTorch: '#EE4C2C'
+  PyTorch: '#EE4C2C',
 
   // Messaging
   nats: '#199bfc',
