@@ -133,9 +133,9 @@ export const projects: Project[] = [
     title: 'IoT Edge Node of Home Assistant',
     slug: 'IoT-Edge-Node-of-Home-Assistant',
     banner: '/static/projects/IoT-Edge-Node-of-Home-Assistant/final_projects.jpg',
-    website: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
+    website: null,
     description: `This project utilizes Nordic Semiconductor's nRF52DK and STM X-NUCLEO-IKS01A3 to create a sensor-based system. Employing ZephyrRTOS and Bluetooth Low Energy (BLE), the nRF52DK gathers data from sensors like LSM6DSO (MEMS 3D accelerometer + 3D gyroscope), LIS2MDL (MEMS 3D magnetometer), LIS2DW12 (MEMS 3D accelerometer), LPS22HH (MEMS pressure sensor), HTS221 (capacitive digital relative humidity and temperature), and STTS751 (temperature). The goal is to develop a simplified system akin to Raspberry Pi Home Assistant, leveraging the Django framework. Data transfer occurs via Bluetooth GATT, where the nRF52DK acts as a BLE server reading commands from Redis messages hosted on Docker. Responses are then relayed back to the Django server via Redis pub/sub channels. Utilizing Django Channels, WebSocket messages are transmitted to the Django site router and then to the internet for further processing.`,
-    repository: null,
+    repository: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
     stack: [
       Stack.ZephyrRTOS,
       Stack.c,
@@ -147,16 +147,7 @@ export const projects: Project[] = [
       Stack.HTML,
       Stack.CSS,
     ],
-    screenshots: [
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=b9b044ce-a3af-402f-a1db-1ae61621bb18',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-2.png?alt=media&token=f551d87b-4f74-4d06-b81e-50ea8bf7feba',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-5.png?alt=media&token=4f68239e-db81-43cc-b3a4-1a8642cfe4eb',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-6.png?alt=media&token=5655d6e8-99d4-4c40-9782-ce12efeab256',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-7.png?alt=media&token=32c12b1e-8e32-4d45-9001-9482d26bdaaf',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-3.png?alt=media&token=609b7e74-8349-48ec-bcc0-4b0071dfb9b6',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=91880856-7288-420c-abb9-c1923f7ccd57',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-4.png?alt=media&token=3dcdc3bd-cbb7-4d8e-9368-306158cce40d',
-    ],
+    screenshots: null,
     deployment: {
       web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
       //android: 'https://play.google.com/store/apps/details?id=app.boom.mobile',
@@ -166,31 +157,86 @@ export const projects: Project[] = [
 
   // Project 5 <-----------------------------------------------------
   {
-    title: 'Dynamic WebSocket REST API: Empowering Real-Time Communication and Custom Requests',
-    slug: 'Dynamic-WebSocket-REST-API:-Empowering-Real-Time-Communication-and-Custom-Requests',
-    website: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
-    banner: '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/rest_api.jpg',
+    title: 'My first Portfolio Website',
+    slug: 'first-portfolio-website',
+    website: 'https://artorias961.github.io',
+    banner: '/static/projects/first_portfolio/first_portfolio.png',
     description:
-      'The project entails the creation of a WebSocket REST API using Python, aimed at enabling communication between clients and a local host computer, facilitated through the Insomnia REST API tool. By sending custom requests, users establish a handshake with the server, which provides access to various directories, each containing specific content. Notably, directory paths such as "/", "/intro", "/greet", and "/bluetooth" grant access to distinct sets of data, with subdirectories like "/scan_local", "/add_device", and "/list_devices" offering further granularity within the "/bluetooth" category. This setup allows users to retrieve content tailored to their needs dynamically. Leveraging WebSocket technology ensures real-time communication, fostering interactive exchanges between clients and the server, thus enhancing the overall user experience and utility of the API.',
-    repository: null,
-    stack: [Stack.python, Stack.HTML],
+      'This is my first venture into website development. I learned how to use HTML, CSS, JS, Node.js, SCSS, and Python. I added my projects to this simple portfolio. Note that I had a lot of fun learning from web development, but I eventually switched to my current portfolio (the one you are currently viewing). It took a long time to master all these skills, and I am proud of this initial portfolio, even though it may not look as polished as professional sites.',
+    repository: 'https://github.com/artorias961/artorias961.github.io',
+      stack: ['HTML', 'CSS', 'JavaScript', 'SCSS', 'Node.Js', 'Python'],
     dimensions: [450, 270],
-    screenshots: [
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=93fffd15-08ca-4ffc-8fce-47bc269237ee',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-2.png?alt=media&token=fd597baf-3aaa-4ad8-abe9-1d42c628285f',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-3.png?alt=media&token=779ea419-adb0-4f62-8ef7-dcfa8d9a4228',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-4.png?alt=media&token=e77b8603-4885-4eed-b108-f9f4bb751796',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-5.png?alt=media&token=94f43db6-c835-404d-ab35-85ddad624a06',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-6.png?alt=media&token=7794ae58-7e3a-45c5-a47a-6c86b909e423',
-    ],
     deployment: {
-      web: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
-      // android:
-        // 'https://play.google.com/store/apps/details?id=com.celebrify.app',
-      // ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
+      web: 'https://github.com/artorias961/artorias961.github.io'
     },
-    subProjects: [],
+    subProjects: []
   },
+
+// Project 6 <-----------------------------------------------------
+{
+  title: 'Personal Portfolio Website: Showcasing Development Projects and Skills',
+  slug: 'personal-portfolio-website-showcasing-development-projects-and-skills',
+  website: 'https://christopher-morales.vercel.app',
+  banner: '/static/projects/personal-portfolio/personal_portfolio.jpg',
+  description:
+    'This is my second portfolio (the one you are currently viewing), which utilizes an open-source template from the Tailwind Next.js Starter Blog. Hosted on Vercel and powered by Next.js, this portfolio is a realization of my dream to create and enhance a website with numerous features—features I never thought I would be able to use one day. I am extremely proud of this achievement and excited about my next project. I plan to build another website from scratch using the Django framework and hope to share it with all of you in the near future!',
+    repository: 'https://github.com/artorias961/portfolio',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'TypeScript', 'MDX', 'KaTeX', 'Node.js'],
+  dimensions: [450, 270],
+  deployment: {
+    web: 'https://christopher-morales.vercel.app'
+  },
+  subProjects: []
+},
+
+
+
+// Project 7 <-----------------------------------------------------
+{
+  title: 'Deep Learning Neural Network for SnakeIO Game: Enhancing AI Performance',
+  slug: 'deep-learning-neural-network-for-snakeio-game-enhancing-ai-performance',
+  website: null,
+  banner: '/static/projects/snakeio-neural-network/snakeio_game.jpg',
+  description:
+    'This project involves the development of a sophisticated deep learning neural network designed to control and enhance the AI of a SnakeIO game. The neural network uses Python and PyTorch to analyze real-time gameplay data, optimizing decision-making processes and improving the AI’s in-game performance. The system’s architecture allows for continuous learning and adaptation, providing a challenging experience for players.',
+  repository: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game',
+    stack: ['Python', 'PyTorch', 'Jupyter Lab'],
+  dimensions: [450, 270],
+  deployment: {
+    web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
+  },
+  subProjects: []
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Project Example <-----------------------------------------------------
   // {
