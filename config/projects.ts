@@ -147,7 +147,7 @@ export const projects: Project[] = [
       Stack.HTML,
       Stack.CSS,
     ],
-    screenshots: null,
+    screenshots: [null],
     deployment: {
       web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
       //android: 'https://play.google.com/store/apps/details?id=app.boom.mobile',
@@ -173,7 +173,7 @@ export const projects: Project[] = [
         Stack.NodeJs,
       ],
 
-    screenshots: null,
+    screenshots: [null],
     // dimensions: [450, 270],
     deployment: {
       web: 'https://github.com/artorias961/artorias961.github.io'
@@ -200,7 +200,7 @@ export const projects: Project[] = [
       Stack.KaTeX,
       Stack.NodeJs,
     ],
-  screenshots: null,
+  screenshots: [null],
   // dimensions: [450, 270],
   deployment: {
     web: 'https://christopher-morales.vercel.app'
@@ -225,7 +225,7 @@ export const projects: Project[] = [
       Stack.jupyternotebook,
     ],
 
-  screenshots: null,
+  screenshots: [null],
   // dimensions: [450, 270],
   deployment: {
     web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
