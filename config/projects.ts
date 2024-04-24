@@ -69,9 +69,9 @@ export const projects: Project[] = [
     slug: 'Mechanical-Keyboard',
     banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
     website: null,
-    description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
+    description: `In this project, I embarked on designing a custom PCB tailored for a mechanical keyboard, which involved multiple iterations to refine the design and functionality. The initial iteration centered around the use of an Arduino Nano board, which served as the foundation for the keyboard's electronics. This version was integrated with the QMK Firmware, a popular open-source software for keyboard customization, allowing for extensive programmability and features. Progressing to the second iteration, I transitioned to using the ATMEGA32A microcontroller. This choice was driven by the need for more control over the hardware design and the desire to develop custom firmware. The ongoing development aims to harness the full potential of the ATMEGA32A, creating a unique and personalized typing experience that leverages the capabilities of custom-built mechanical keyboards.`,
     shortDescription:
-      'Peapods is a new type of decentralized social network that values real human interaction.',
+      'Developed a custom PCB for a mechanical keyboard in two iterations: the first utilized an Arduino Nano with QMK Firmware for rapid prototyping and feature testing; the second iteration employs an ATMEGA32A microcontroller, focusing on custom firmware development to enhance functionality and user experience.',
     repository: 'https://github.com/artorias961/Mechanical-Keyboards',
     stack: [
       Stack.KiCAD,
