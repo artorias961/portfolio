@@ -37,12 +37,12 @@ export const projects: Project[] = [
     title: '3D Geometry Reconstruction of Medical Images',
     slug: '3D-Geometry-Reconstruction-Of-Medical-Images',
     banner: '/static/projects/3DGeometryReconstructionOfMedicalImages/medical_images.png',
-    website: null,
+    website: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
     description:
       'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image. The goal was to provide a detailed 3D model that could be easily manipulated for use in the medical field. The focus was on Magnetic Resonance Images (MRI) of the pelvic anatomy of women patients, with an emphasis on three main organs, the bladder, vagina, and rectum. To construct the 3D models from the MRI scans computer vision was utilized as the main tool for image analysis. An object detection tool was developed and trained to detect, differentiate, and label the bladder, vagina, and rectum. These same images were converted to a greyscale, which allowed the organs of interest to be isolated as well as identified by drawing contours around them. An ellipse was then fitted into each contour, and from these ellipses certain parameters could be obtained. Including the center point (x, y, z), the length (l), height (h) and orientation (n). This data can then be utilized to create a 3D CAD model of the patients’ pelvic organs.',
     shortDescription:
       'The project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image.',
-    repository: 'https://github.com/mbrieu/3D-Geometry-Recontruction-of-Medical-Images',
+    repository: null,
     stack: [
       Stack.computervision,
       Stack.python,
@@ -68,10 +68,10 @@ export const projects: Project[] = [
     title: 'Mechanical Keyboards Design',
     slug: 'Mechanical-Keyboard',
     banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
-    website: null,
-    description: `In this project, I embarked on designing a custom PCB tailored for a mechanical keyboard, which involved multiple iterations to refine the design and functionality. The initial iteration centered around the use of an Arduino Nano board, which served as the foundation for the keyboard's electronics. This version was integrated with the QMK Firmware, a popular open-source software for keyboard customization, allowing for extensive programmability and features. Progressing to the second iteration, I transitioned to using the ATMEGA32A microcontroller. This choice was driven by the need for more control over the hardware design and the desire to develop custom firmware. The ongoing development aims to harness the full potential of the ATMEGA32A, creating a unique and personalized typing experience that leverages the capabilities of custom-built mechanical keyboards.`,
+    website: 'https://github.com/artorias961/Mechanical-Keyboards',
+    description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
     shortDescription:
-      'Developed a custom PCB for a mechanical keyboard in two iterations: the first utilized an Arduino Nano with QMK Firmware for rapid prototyping and feature testing; the second iteration employs an ATMEGA32A microcontroller, focusing on custom firmware development to enhance functionality and user experience.',
+      'Peapods is a new type of decentralized social network that values real human interaction.',
     repository: 'https://github.com/artorias961/Mechanical-Keyboards',
     stack: [
       Stack.KiCAD,
@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     title: 'Robotics Dog',
     slug: 'Robotics-Dog',
-    website: null,
+    website: 'https://github.com/artorias961/robotics-dog',
     banner: '/static/projects/Robotic_Dog/robotic_dog.jpg',
     description:
       'The purpose of this project is to create a tour bot that will guide Cal State LA guests to locations on campus. The tour bot will be given a dataset of the school building’s floor plans and a predetermined path to follow. The bot will be a mobile platform that will incorporate computer vision to identify obstacles and facilitate localization. The collection of sensors used to navigate the environment may also incorporate LiDAR, ultrasonics, cameras, IR proximity, and a GPS module that will focus on gathering data of the surrounding environment. While the internal sensors will consist of IMUs, position sensors, load sensors, and current sensors. The sensors will report to slaved microcontrollers that will feed into the microprocessor. Ubuntu is currently the planned operating system to control high level algorithms. The control software will dictate commands to the tour bot actuators consisting of servo, stepper, and brushless motors. Electronic subsystems will be used to power the motors and to regulate the power supply. The majority of the tour bot chassis will be a 3D printed, built around a load bearing internal frame.',
@@ -133,9 +133,9 @@ export const projects: Project[] = [
     title: 'IoT Edge Node of Home Assistant',
     slug: 'IoT-Edge-Node-of-Home-Assistant',
     banner: '/static/projects/IoT-Edge-Node-of-Home-Assistant/final_projects.jpg',
-    website: null,
+    website: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
     description: `This project utilizes Nordic Semiconductor's nRF52DK and STM X-NUCLEO-IKS01A3 to create a sensor-based system. Employing ZephyrRTOS and Bluetooth Low Energy (BLE), the nRF52DK gathers data from sensors like LSM6DSO (MEMS 3D accelerometer + 3D gyroscope), LIS2MDL (MEMS 3D magnetometer), LIS2DW12 (MEMS 3D accelerometer), LPS22HH (MEMS pressure sensor), HTS221 (capacitive digital relative humidity and temperature), and STTS751 (temperature). The goal is to develop a simplified system akin to Raspberry Pi Home Assistant, leveraging the Django framework. Data transfer occurs via Bluetooth GATT, where the nRF52DK acts as a BLE server reading commands from Redis messages hosted on Docker. Responses are then relayed back to the Django server via Redis pub/sub channels. Utilizing Django Channels, WebSocket messages are transmitted to the Django site router and then to the internet for further processing.`,
-    repository: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
+    repository: null,
     stack: [
       Stack.ZephyrRTOS,
       Stack.c,
@@ -148,7 +148,14 @@ export const projects: Project[] = [
       Stack.CSS,
     ],
     screenshots: [
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=b9b044ce-a3af-402f-a1db-1ae61621bb18',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-2.png?alt=media&token=f551d87b-4f74-4d06-b81e-50ea8bf7feba',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-5.png?alt=media&token=4f68239e-db81-43cc-b3a4-1a8642cfe4eb',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-6.png?alt=media&token=5655d6e8-99d4-4c40-9782-ce12efeab256',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-7.png?alt=media&token=32c12b1e-8e32-4d45-9001-9482d26bdaaf',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-3.png?alt=media&token=609b7e74-8349-48ec-bcc0-4b0071dfb9b6',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=91880856-7288-420c-abb9-c1923f7ccd57',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fvelvet%2Fscreenshots%2Fscreenshot-4.png?alt=media&token=3dcdc3bd-cbb7-4d8e-9368-306158cce40d',
     ],
     deployment: {
       web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
@@ -159,117 +166,31 @@ export const projects: Project[] = [
 
   // Project 5 <-----------------------------------------------------
   {
-    title: 'My first Portfolio Website',
-    slug: 'first-portfolio-website',
-    website: 'https://artorias961.github.io',
-    banner: '/static/projects/first_portfolio/first_portfolio.png',
+    title: 'Dynamic WebSocket REST API: Empowering Real-Time Communication and Custom Requests',
+    slug: 'Dynamic-WebSocket-REST-API:-Empowering-Real-Time-Communication-and-Custom-Requests',
+    website: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
+    banner: '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/rest_api.jpg',
     description:
-      'This is my first venture into website development. I learned how to use HTML, CSS, JS, Node.js, SCSS, and Python. I added my projects to this simple portfolio. Note that I had a lot of fun learning from web development, but I eventually switched to my current portfolio (the one you are currently viewing). It took a long time to master all these skills, and I am proud of this initial portfolio, even though it may not look as polished as professional sites.',
-    repository: 'https://github.com/artorias961/artorias961.github.io',
-      stack: [
-        Stack.HTML,
-        Stack.CSS,
-        Stack.javascript,
-        Stack.python,
-        Stack.SCSS,
-        Stack.NodeJs,
-      ],
-
+      'The project entails the creation of a WebSocket REST API using Python, aimed at enabling communication between clients and a local host computer, facilitated through the Insomnia REST API tool. By sending custom requests, users establish a handshake with the server, which provides access to various directories, each containing specific content. Notably, directory paths such as "/", "/intro", "/greet", and "/bluetooth" grant access to distinct sets of data, with subdirectories like "/scan_local", "/add_device", and "/list_devices" offering further granularity within the "/bluetooth" category. This setup allows users to retrieve content tailored to their needs dynamically. Leveraging WebSocket technology ensures real-time communication, fostering interactive exchanges between clients and the server, thus enhancing the overall user experience and utility of the API.',
+    repository: null,
+    stack: [Stack.python, Stack.HTML],
+    dimensions: [450, 270],
     screenshots: [
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-1.png?alt=media&token=93fffd15-08ca-4ffc-8fce-47bc269237ee',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-2.png?alt=media&token=fd597baf-3aaa-4ad8-abe9-1d42c628285f',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-3.png?alt=media&token=779ea419-adb0-4f62-8ef7-dcfa8d9a4228',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-4.png?alt=media&token=e77b8603-4885-4eed-b108-f9f4bb751796',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-5.png?alt=media&token=94f43db6-c835-404d-ab35-85ddad624a06',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fcelebrify%2Fscreenshots%2Fscreenshot-6.png?alt=media&token=7794ae58-7e3a-45c5-a47a-6c86b909e423',
     ],
-    // dimensions: [450, 270],
     deployment: {
-      web: 'https://github.com/artorias961/artorias961.github.io'
+      web: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
+      // android:
+        // 'https://play.google.com/store/apps/details?id=com.celebrify.app',
+      // ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
     },
-    subProjects: [] 
+    subProjects: [],
   },
-
-// Project 6 <-----------------------------------------------------
-{
-  title: 'My Second Personal Portfolio Website',
-  slug: 'personal-portfolio-website',
-  website: 'https://christopher-morales.vercel.app',
-  banner: '/static/projects/Portfolio/nextjs.png',
-  description:
-    'This is my second portfolio (the one you are currently viewing), which utilizes an open-source template from the Tailwind Next.js Starter Blog. Hosted on Vercel and powered by Next.js, this portfolio is a realization of my dream to create and enhance a website with numerous features—features I never thought I would be able to use one day. I am extremely proud of this achievement and excited about my next project. I plan to build another website from scratch using the Django framework and hope to share it with all of you in the near future!',
-    repository: 'https://github.com/artorias961/portfolio',
-    stack: [
-      Stack.HTML,
-      Stack.CSS,
-      Stack.javascript,
-      Stack.NextJs,
-      Stack.TypeScript,
-      Stack.MDX,
-      Stack.KaTeX,
-      Stack.NodeJs,
-    ],
-  screenshots: [
-    'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
-  ],
-  // dimensions: [450, 270],
-  deployment: {
-    web: 'https://christopher-morales.vercel.app'
-  },
-  subProjects: []
-},
-
-
-
-// Project 7 <-----------------------------------------------------
-{
-  title: 'Deep Learning Neural Network for SnakeIO Game',
-  slug: 'deep-learning-neural-network-for-snakeio-game',
-  website: null,
-  banner: '/static/projects/snakeio-neural-network/snakeio_game.jpg',
-  description:
-    'This project involves the development of a sophisticated deep learning neural network designed to control and enhance the AI of a SnakeIO game. The neural network uses Python and PyTorch to analyze real-time gameplay data, optimizing decision-making processes and improving the AI’s in-game performance. The system’s architecture allows for continuous learning and adaptation, providing a challenging experience for players.',
-  repository: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game',
-    stack: [
-      Stack.python,
-      Stack.PyTorch,
-      Stack.jupyternotebook,
-    ],
-
-  screenshots: [
-    'https://firebasestorage.googleapis.com/v0/b/portfolio-8fa71.appspot.com/o/projects%2Fproximity%2Fscreenshots%2Fscreenshot-8.png?alt=media&token=e041e4bd-50fc-49a7-8a22-f6e98d3e1bc6',
-  ],
-  // dimensions: [450, 270],
-  deployment: {
-    web: 'https://github.com/artorias961/deep-learning-neural-network-SnakeIO-Game'
-  },
-  subProjects: []
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   // Project Example <-----------------------------------------------------
   // {

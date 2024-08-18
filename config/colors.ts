@@ -1,5 +1,4 @@
 export const Colors = {
-
   // Languages
   c: '#00ADD8',
   cplusplus: '#4B8BBE',
@@ -35,22 +34,12 @@ export const Colors = {
   // Cloud
   computervision: '#FF9900',
   jupyternotebook: '#4285F4',
-  MachineLearning: '#0DB7Ed',
+  MachineLearning: '#0DB7Ed', 
 
-  // Additional
+
+  
   KiCAD: '#326CE5',
   ROS: '#7B42BC',
-
-  // New additions with unique colors
-  SCSS: '#C6538C',
-  NodeJs: '#539E43',
-  ReactNative: '#7D5A50',
-  NextJs: '#0070F3',
-  TypeScript: '#3178C6',
-  KaTeX: '#A663CC',
-  LaTeX: '#3D6117',
-  MDX: '#FA7900',
-  PyTorch: '#EE4C2C',
 
   // Messaging
   nats: '#199bfc',

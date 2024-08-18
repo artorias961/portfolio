@@ -4,7 +4,7 @@ date: '2024-01-30'
 tags: ['Git']
 draft: false
 summary: 'A Step-by-Step Guide to Creating and Connecting to a Repository'
-images: ['/static/blogs/git-add.png']
+images: ['/static/blogs/amazing-placeholder-blurhash.jpeg']
 authors: ['default']
 ---
 
@@ -94,40 +94,9 @@ git push -u origin main
 Enter your GitHub username and password when prompted
 
 
-## Managing Nested Git Repository: Submodules vs Ignoring Directories
-When working with Git, one of the challenges developers might face is how to handle nested Git repositories within a main project. This situation typically arises when you've inadvertently initialized a Git repository within another Git repository. This can cause issues, as seen when trying to commit changes and encountering errors due to these nested directories being treated as untracked files.
+## Conclusion
 
-Let's explore two practical approaches to managing these nested Git repositories: using Git submodules and ignoring the directories.
-
-
-### Approach 1: Using Git Submodules
-
-Git submodules allow you to keep a reference to specific commits in other repositories, rather than including all their files directly in your parent repository. This method is ideal if these nested directories are indeed separate projects that you want to maintain independently.
-
-Here’s how to set up submodules:
-
-#### Remove Nested Directories from Current Tracking
-
-First, you'll want to stop tracking these directories in your main project:
-```bash
-git rm --cached sub-repository/file-path -r
-```
-
-For example:
-```bash
-git rm --cached Project/Neural_Network_Deep_Learning_Project -r
-git rm --cached Project/Website_Project_2.0 -r
-```
+Congratulations! You've successfully created a Git repository, configured essential settings, and connected it to a remote repository on GitHub. This step-by-step guide is designed to help you get started with version control, making it easier to collaborate and manage your projects efficiently. Feel free to explore more advanced Git features as you continue your journey into the world of version control.
 
 
-#### Add as Submodules
-Next, add these as submodules by using their remote repository URLs:
-```bash
-git submodule add <repository-url> sub-repository/file-path
-```
 
-For example:
-```bash
-git submodule add <repository-url> Project/Neural_Network_Deep_Learning_Project
-git submodule add <repository-url> Project/Website_Project_2.0
-```
