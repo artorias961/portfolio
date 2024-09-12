@@ -6,6 +6,7 @@ occupation: Electrical Engineer
 company: Graduate Student
 resume: /static/Christopher_Morales_Electrical_Engineer_V8_2.pdf
 bachelors_diploma: /static/eDiploma.pdf
+master_diploma: /static/Master_EE_eDiploma.pdf
 email: contact@artorias962.com
 twitter: https://twitter.com/
 linkedin: https://www.linkedin.com/in/artorias961

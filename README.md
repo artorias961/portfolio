@@ -36,6 +36,7 @@ This portfolio was built on top of [Tailwind Next JS Starter Blog](https://githu
 
 - About Me Page
    - data\authors\default.md
+      - To add another file (step 1)
    - layouts\AuthorLayout.tsx
    - types\AuthorFrontMatter.ts
 

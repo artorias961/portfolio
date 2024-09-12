@@ -7,6 +7,7 @@ export type AuthorFrontMatter = {
   company: string;
   resume: string;
   bachelors_diploma: string;
+  master_diploma: string;
   email: string;
   twitter: string;
   linkedin: string;
