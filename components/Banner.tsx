@@ -21,8 +21,8 @@ function Banner(props: BannerProps): React.ReactElement {
         {frontMatter.occupation}
       </p>
       <p className='font-light lg:text-xl'>
-        Read more Work
-        <Link className='ml-2 mr-2 font-normal text-black' href='/work-history'> 
+        Read more 
+        <Link className='ml-2 mr-2 font-normal text-black' href='/about'> 
           <RoughNotation
             show
             type='highlight'
@@ -30,11 +30,11 @@ function Banner(props: BannerProps): React.ReactElement {
             animationDuration={2000}
             color={aboutColor}
           >
-            History
+            about me
           </RoughNotation>
         </Link>
-        or view my 
-        <Link className='ml-2 font-normal text-black' href='/about'>
+        or view
+        <Link className='ml-2 font-normal text-black' href='/work-history'>
           <RoughNotation
             show
             type='highlight'
@@ -42,7 +42,7 @@ function Banner(props: BannerProps): React.ReactElement {
             animationDuration={2000}
             color={contactColor}
           >
-            about me
+            work history
           </RoughNotation>
         </Link>
       </p>
