@@ -21,7 +21,7 @@ function Banner(props: BannerProps): React.ReactElement {
         {frontMatter.occupation}
       </p>
       <p className='font-light lg:text-xl'>
-        Read more
+        Read more Work
         <Link className='ml-2 mr-2 font-normal text-black' href='/work-history'> 
           <RoughNotation
             show
@@ -30,7 +30,7 @@ function Banner(props: BannerProps): React.ReactElement {
             animationDuration={2000}
             color={aboutColor}
           >
-            Work History
+            History
           </RoughNotation>
         </Link>
         or view my 

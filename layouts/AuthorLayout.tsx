@@ -80,7 +80,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               </a>
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
-                style={{marginRight: '1rem'}}
+                style={{marginRight: '10px'}}
                 href={master_diploma}
                 target='_blank'
                 rel='noreferrer'
