@@ -69,15 +69,15 @@ export const projects: Project[] = [
     slug: 'Mechanical-Keyboard',
     banner: '/static/projects/mechanical_keyboard/mechanical_keyboard.jpg',
     website: 'https://github.com/artorias961/Mechanical-Keyboards',
-    description: `Peapods is a new type of decentralized social network that values real human interaction. The platform helps you become closer with your friends and make new ones. We value kindness, friendship, user privacy, and genuine connection. Together we can cure boredom, conquer loneliness, and fulfill the original promise of the internet to connect us in ways that matter.`,
+    description: `The Mechanical-Keyboards repository by artorias961 serves as a comprehensive resource for enthusiasts and developers interested in mechanical keyboards. It focuses on firmware development, PCB design, key mapping, and custom builds, providing valuable tools for building and customizing mechanical keyboards. The repository features QMK firmware configurations that enable advanced keyboard behavior, including key remapping, layer management, and macro implementation. It also contains PCB schematics and design files, offering users the ability to build keyboards from scratch using tools like KiCad. In addition, custom case and plate designs, likely created with CAD tools such as Fusion360, allow for fully personalized hardware. The repository is ideal for DIY keyboard builders, firmware developers, and enthusiasts who want to explore mechanical keyboard hardware and software integration. By including example builds, keymap files, and detailed documentation, it guides users step-by-step through the process of creating or customizing their keyboards. Whether the goal is designing a new keyboard layout with QMK, constructing a PCB, or building a unique mechanical keyboard, this repository provides a one-stop hub for learning and implementation. With its blend of hardware design and software programming resources, it is a valuable asset for anyone passionate about mechanical keyboards.`,
     shortDescription:
-      'Peapods is a new type of decentralized social network that values real human interaction.',
+      'The Mechanical-Keyboards repository offers resources for customizing and building mechanical keyboards. It includes QMK firmware configurations, PCB schematics, and CAD files for case designs, enabling users to create unique mechanical keyboards from scratch. Ideal for DIY builders and firmware developers, it serves as a guide to integrate hardware design with software customization.',
     repository: 'https://github.com/artorias961/Mechanical-Keyboards',
     stack: [
       Stack.KiCAD,
       Stack.c,
     ],
-    dimensions: [99, 40],
+    dimensions: [360, 640],
     screenshots: [
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard_back.png',
       '/static/projects/mechanical_keyboard/screenshots/3d_model_keyboard.png',

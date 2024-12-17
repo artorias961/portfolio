@@ -13,10 +13,9 @@ linkedin: https://www.linkedin.com/in/artorias961
 github: https://github.com/artorias961
 ---
 
-A electrical engineer who aims to evolve, innovate, and inspire through technology.
-
-Currently, I am pursuing a graduate degree in Electrical Engineering [Cal State LA](https://www.calstatela.edu/ecst/ece), with a research focus on enhancing energy efficiency in smart environments through the application of Bluetooth Low Energy (BLE) technology for occupancy detection. 
 
 
+I have graduated with a Master's degree in Electrical Engineering from  [Cal State LA](https://www.calstatela.edu/ecst/ece), where my research focused on enhancing energy efficiency in smart environments using Bluetooth Low Energy (BLE) technology for occupancy detection. Currently, I work as an Electrical Engineer at [Northrop Grumman](https://www.northropgrumman.com), contributing to impactful projects and advancing my skills in a professional setting.
 
+Outside of work, I continue to pursue my passions in embedded systems, web development, and PCB design. These hobbies fuel my curiosity and allow me to innovate in both hardware and software, bridging creativity with technical expertise.
 
