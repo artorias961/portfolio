@@ -13,6 +13,15 @@
   </a>
 </p>
 
+# Hi, I'm Christopher Morales (artorias961)
+Welcome to my portfolio repository! This is where I showcase my personal website that highlights my professional background, projects, and technical skills.
+
+What’s Inside:
+- **About Me**: A bit about who I am, my journey, and what I’ve accomplished.
+- **Projects**: A collection of work I’ve done, including robotics, computer vision, and web development.
+- **Tech Stack**: Built with Next.js, HTML/CSS, and other modern tools to ensure a clean and responsive design.
+This portfolio is a reflection of my passion for engineering, coding, and creating meaningful projects. Feel free to check it out and connect with me!
+
 ## Reference
 This portfolio was built on top of [Tailwind Next JS Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) template which comes with built-in blogs functionality and much more! 
 
