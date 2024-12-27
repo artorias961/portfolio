@@ -17,7 +17,7 @@
 Welcome to my portfolio repository! This is where I showcase my personal website that highlights my professional background, projects, and technical skills.
 
 What’s Inside:
-- **About Me**: A bit about who I am, my journey, and what I’ve accomplished.
+- **About Me**: I have graduated with a Master's degree in Electrical Engineering from  [Cal State LA](https://www.calstatela.edu/ecst/ece), where my research focused on enhancing energy efficiency in smart environments using Bluetooth Low Energy (BLE) technology for occupancy detection. Currently, I work as an Electrical Engineer at [Northrop Grumman](https://www.northropgrumman.com), contributing to impactful projects and advancing my skills in a professional setting. Outside of work, I continue to pursue my passions in embedded systems, web development, and PCB design. These hobbies fuel my curiosity and allow me to innovate in both hardware and software, bridging creativity with technical expertise.
 - **Projects**: A collection of work I’ve done, including robotics, computer vision, and web development.
 - **Tech Stack**: Built with Next.js, HTML/CSS, and other modern tools to ensure a clean and responsive design.
 This portfolio is a reflection of my passion for engineering, coding, and creating meaningful projects. Feel free to check it out and connect with me!
