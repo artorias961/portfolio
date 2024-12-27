@@ -69,12 +69,27 @@ const WorkHistory = () => {
 
 
     // Job 10
+    {
+      company: 'Northrop Grumman',
+      title: 'Electrical Engineer (T2)',
+      date: 'Aug 2024 - Present',
+      tasks: [
+        'Developed and maintained test benches to streamline verification and validation processes, ensuring high reliability and compliance with technical specifications for defense systems',
+        'Conducted troubleshooting and analysis of test setups and equipment, utilizing technical skills to optimize performance and minimize downtime in a fast-paced engineering environment',
+        'Reduced downtime by 50% through proactive troubleshooting and preventative maintenance of test setups',
+        'Delivered technical presentations to stakeholders, translating complex engineering concepts into actionable insights',
+        'Partnered with design and manufacturing teams to align test plans with system specifications, minimizing discrepancies during production',
+      ],
+      repo: 'https://github.com/example-repo',
+      location: 'Maryland, Baltimore'
+    },
+
 
     // Job 9
     {
       company: 'Smart Program VR/AR/XR tech for virtual learning space',
       title: 'Team Lead',
-      date: 'Jan 2024 - Present',
+      date: 'Jan 2024 - Aug 2024',
       tasks: [
         'Integrated generative AI technologies to enhance creativity among 23 interns, minimizing reliance on technical prerequisites',
         'Developed a comprehensive virtual lab environment using COLMAP, Unity, and LucidVR gloves, enhancing user interaction and realism in virtual settings',
@@ -88,7 +103,7 @@ const WorkHistory = () => {
     {
       company: 'NSF CREST Center for Advancement toward Sustainable Urban Systems',
       title: 'Research Fellow',
-      date: 'Oct 2023 - Present',
+      date: 'Oct 2023 - Aug 2024',
       tasks: [
         'Developed advanced room occupancy detection and tracking techniques, enabling accurate monitoring and identification within confined spaces',
         'Designed and delivered engaging lectures, practical demonstrations, and hands-on lab experiments',
@@ -103,7 +118,7 @@ const WorkHistory = () => {
     {
       company: 'Dept. of Electrical and Computer Engineering, Cal State LA',
       title: 'Teaching Associate',
-      date: 'Aug 2022 - Present',
+      date: 'Aug 2022 - Aug 2024',
       tasks: [
         'Developing and delivering engaging lectures over 40 students in EE 2450 Embedded Systems I and EE 4689 Controls Lab',
         'Guided students in theoretical and practical aspects of embedded systems, leading to enhanced project implementations',
@@ -118,7 +133,7 @@ const WorkHistory = () => {
     {
       company: 'Dept. of Electrical and Computer Engineering, Cal State LA',
       title: 'Makerspace Assistant',
-      date: 'Aug 2021 - Present',
+      date: 'Aug 2021 - Aug 2024',
       tasks: [
         'Oversaw the establishment and operation of the Dry Lab Makerspace for approximately 40 students, creating an innovative environment for both STEM and non-STEM learners to develop and execute projects',
         'Provided hands-on assistance and instruction in Python programming, helping students develop coding skills applicable in various project contexts',
