@@ -80,7 +80,7 @@ const WorkHistory = () => {
         'Delivered technical presentations to stakeholders, translating complex engineering concepts into actionable insights',
         'Partnered with design and manufacturing teams to align test plans with system specifications, minimizing discrepancies during production',
       ],
-      repo: 'https://github.com/example-repo',
+      repo: null,
       location: 'Maryland, Baltimore'
     },
 
