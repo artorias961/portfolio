@@ -107,6 +107,7 @@ export const projects: Project[] = [
       Stack.ZephyrRTOS,
       Stack.Linux,
     ],
+    dimensions: [360, 640],
     screenshots: [
       '/static/projects/Robotic_Dog/20240406_140814.jpg',
       '/static/projects/Robotic_Dog/IMG_9904.jpg',
@@ -142,6 +143,7 @@ export const projects: Project[] = [
       Stack.HTML,
       Stack.CSS,
     ],
+    dimensions: [360, 640],
     screenshots: [
       '/static/projects/IoT-Edge-Node-of-Home-Assistant/image_home_assisstant.png',
 
@@ -163,7 +165,7 @@ export const projects: Project[] = [
       'The project entails the creation of a WebSocket REST API using Python, aimed at enabling communication between clients and a local host computer, facilitated through the Insomnia REST API tool. By sending custom requests, users establish a handshake with the server, which provides access to various directories, each containing specific content. Notably, directory paths such as "/", "/intro", "/greet", and "/bluetooth" grant access to distinct sets of data, with subdirectories like "/scan_local", "/add_device", and "/list_devices" offering further granularity within the "/bluetooth" category. This setup allows users to retrieve content tailored to their needs dynamically. Leveraging WebSocket technology ensures real-time communication, fostering interactive exchanges between clients and the server, thus enhancing the overall user experience and utility of the API.',
     repository: null,
     stack: [Stack.python, Stack.HTML],
-    dimensions: [450, 270],
+    dimensions: [360, 640],
     screenshots: [
       '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/iot_image1.png',
       '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/iot_image2.png',
