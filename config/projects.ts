@@ -144,8 +144,7 @@ export const projects: Project[] = [
     ],
     screenshots: [
       '/static/projects/IoT-Edge-Node-of-Home-Assistant/image_home_assisstant.png',
-      '',
-      '',
+
     ],
     deployment: {
       web: 'https://github.com/artorias961/IoT-Edge-Node-of-Home-Assistant.git',
@@ -169,9 +168,6 @@ export const projects: Project[] = [
       '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/iot_image1.png',
       '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/iot_image2.png',
       '/static/projects/Dynamic-WebSocket-REST-API-Empowering-Real-Time-Communication-and-Custom-Requests/iot_image2.png',
-      '',
-      '',
-      '',
     ],
     deployment: {
       web: 'https://github.com/artorias961/Websocket-REST-API-using-Python',
